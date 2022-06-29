@@ -103,58 +103,6 @@
 <p>25 to,   data, enc,  len: 8, data: fd81d2b58c5e3206, crc: e78a0e </p>
 <p></p>
 <p><b>=====================================================</b></p>
-<p><b>=======================out===========================</b></p>
-<p>1 from, hello, no_enc,  len: 3, data: b'li\xfa', crc: 95c5e6</p>
-<p></p>
-<p>2 to,   hello, no_enc,  len: 3, data: b'li\xfa', crc: 95c5e6</p>
-<p></p>
-<p>3 from, data, no_enc,  len: 48, data: <strong>b'Hello there, long time no see, zraxx'</strong>, crc: 9eab52 </p>
-<p></p>
-<p>4 to,   data, no_enc,  len: 68, data: <strong>b'yeah, I am quite busy making ACTF crypto challenges'</strong>, crc: ab0896 </p>
-<p></p>
-<p>5 from, data, no_enc,  len: 64, data: <strong>b'well, I can offer you a not bad signin challenge'</strong>, crc: d1e8ac </p>
-<p></p>
-<p>6 to,   data, no_enc,  len: 12, data: <strong>b'show me'</strong>, crc: 06eb3b </p>
-<p></p>
-<p>7 from, data, no_enc,  len: 52, data: <strong>b"let's first dive into secure connection"</strong>, crc: 2a8595 </p>
-<p></p>
-<p>8 from, hello, enc,  len: 3, data: d9b2df, crc: e93bf9 </p>
-<p></p>
-<p>9 to,   hello, enc,  len: 3, data: d9b2df, crc: e93bf9 </p>
-<p></p>
-<p>10 from, sc_req, enc,  len: 16, data: ec36e5b06955d995567ee5de450737f8, crc: 7dd557 </p>
-<p></p>
-<p>11 to,   sc_rsp, enc,  len: 16, data: 68b3ded5b84014dcf3fb7502d9390e34, crc: a6bf63 </p>
-<p></p>
-<p>12 from, m_confirm, enc,  len: 16, data: 9f5136cacd9f2a5387394b7d0c1cXXXX, crc: 584605 </p>
-<p></p>
-<p>13 to,   s_confirm, enc,  len: 16, data: XXd6e4XXXX5cXXb7ba906e57055a8ec8, crc: 2ddbb8 </p>
-<p></p>
-<p>14 from, m_random, enc,  len: 16, data: 4bd20924f0c3cd30ba64a0f1d964691e, crc: faa2d5 </p>
-<p></p>
-<p>15 to,   s_random, enc,  len: 16, data: dd76514f5736813aa8c2178eXXf82d5b, crc: 6f68ec </p>
-<p></p>
-<p>16 from, data, enc,  len: 68, data: ee491a84624116fb685e5d471494aa6d3eac7c53707c465050907ea20112040690025e92a61dd8291b50d0c16913b9cd0ff5290edad9c23d69384649765b847f15f221ce, crc: 3e4fb4 </p>
-<p></p>
-<p>17 to,   data, enc, more_data,  len: 255, data: ea4d61864a515fe478413b4c1294b57a388207145b56224a50916abe01121f1280106fc5a577a83a1d40af897a07a18d0cdf1318f2d2d27e424c55575c20907d2df2478a0519c8170633f1a94db615ac37bba648c133dff426c20a28f9125fe1fd35d0af550701851692626b6ffac7434f92b568c266533652de21864323033898f514fd5cb0ef2059fe9ab68e2917d75d5ccfc6a8c21dba69d73bb79944c38bb5208ffe67e028649a406a2bd71d8670f19fefa719cfdbe672f4c58a1e2d1c092c3f21db23bf63f7da5d78905602f222e458a5ca7a04835d4cd90a1a5d900a78f67516ea443289971a7fe2da157d60ce1b6331acc87ef69ce9589efa9c5469, crc: 10b531 </p>
-<p></p>
-<p>18 to,   data, enc, more_data,  len: 255, data: 8411de79f3a0cfb304f6dfec305c00ca30d769829e559b428dc6f0ae6d8b73d9afbbbfa8b4f4e5ad6bbe553beb3497882b8a413feee320f63869b79b98ac6a6783e0e5dee5e18e804313e22e56383afdb4eaa54487ad8aec5a5e016e5ddb3944813957e70524e058e85641fa4dcdb2714d6aa479160b4368c8dbadd66d8d8a9e4c8a7f584554f31522823559381e754e8cc8c6a00be26d750d7849366eccb224909dc98bda4e5181153c6707c0f65c9c6da1148cfefdc77a65636917f93c8c0d447ebd7e49894fb4617ab6b3709e2ab3b9c9fe18947eb45085e7b9e72cdbc01092ac603cc2f7cbfbfbb69ff9affaba609b99cf35694b9b9ef4cab3dfbc1d7b, crc: 30a6be </p>
-<p></p>
-<p>19 to,   data, enc, more_data,  len: 255, data: 4a21065d5ab2a0e2cb4f31e22bddd9576e81cd3105dc91a9fb9db0dcec197be84e441a79ecb41553852f1558785dc31f036208a452c357b1524cf56dbcdf985e6435b8f6174cfd28d92e3d30abe982ee10d80a753155bed89c85bad3649bed2f2e41a53c1a1edd6547227014868235ac5ebbe6e8c7cb92640d0cdd81a69135ad3b3639bee246285cc513cb6d216447342c596d77dfe64a06667b64f4b75ac7c603cb5c02aceaf4f780ec1cc43fed5fb8cf194b029d8e485fff93695f37862102b76060549ea9d0c5f852be7ced74e30dcda4bb9513a957fae08e41aa0974b5b04567f8a49da94c0fc8f2820a457118daece75a4ed45d0db8757c47a9d185e5, crc: 64276a </p>
-<p></p>
-<p>20 to,   data, enc,  len: 91, data: a6367b6aa555af69a9a97d0e09aa4886d52720c77465e33718768d1489d9d1cc84d0ed7bd60455002e04ee7fae368c478382a2ef264bdd9173d28c29315b8f3e3c19248950bed65fe788e4ac137126851bc88d4794e641859e6fb2, crc: 0b3768 </p>
-<p></p>
-<p>21 from, data, enc, more_data,  len: 255, data: b729d427d4a9d5952ec3cecc1e70159c27c6638d8a03ed6cf1e4f5b143961ed9a79faee890f5ecad639e4f09ce13cfbc33d84f27c8ea3ace1178a8b18e9f6b5face2e8ebedc48fae7a36d500600a53ea89e8c61a95c5fcd85445711563fe1664d12142ee112af26dcb7340a345d0996a4952b13f1f703d4c99b1b3e902878ff745ac61216b49d838058d0a6837001b11bcc6c48231eb51445f74483558ddbc119ff7b985cb1e69b00b424875e2d04d9665f20185e997bc4872474254e12d99547659b75852ba5e994164b7cf459049f280ffff1db370bd7290edb3c537d6a735fa993e09e8c5debcd5858a98f8f4aa4dc9cece013d6f958fdad787e0993644, crc: de2274 </p>
-<p></p>
-<p>22 from, data, enc,  len: 29, data: 1013375c5ca983e3905a58f705de88337fb3fc341cdaab9eaecf90ab8b, crc: 8c601f </p>
-<p></p>
-<p>23 to,   data, enc,  len: 40, data: 18aee95ecac09ee63dd28707b8942d4f2a7052d71bfd27d81bcceffd208a1463f9a135248def5781, crc: eca094 </p>
-<p></p>
-<p>24 from, data, enc,  len: 96, data: a2162539df5bac459586535812db74a6cb541dd71f64ec4d12719f32a6def899e3d7eb62c4127702173ec242bc32aa5e82fee8ea335bc4ad7dc8f22e2059a30419171abe73afe65bfaa6ada32a15788d0db6b359b0be7fa6af68cde6e24ca95d, crc: 0b4acb </p>
-<p></p>
-<p>25 to,   data, enc,  len: 8, data: fd81d2b58c5e3206, crc: e78a0e </p>
-<p></p>
-<p><b>=====================================================</b></p>
 <p>You will not find any valuable information in client.py</p>
 <p>Now we can draw a few conclusions, based on dump file and core.py file</p>
 <p>Obviously the first of them is master and the second is slave</p>
@@ -237,7 +185,7 @@ print(m_confirm)
 b'\x9fQ6\xca\xcd\x9f*S\x879K}\x0c\x1c\x16\xfa'
 ```
 
-<p>We know that m_confirm = aes(key=shared_key, mode=CCM, plain=plain)</p>
+<p>We know that m_confirm = aes(key=shared_key, mode=ECB, plain=plain)</p>
 <p>where plain = aes(key=shared_key, mode=ECB, plain=plain1)</p>
 <p>plain1 = b'\xff' * 16 <b>XOR</b> aes(key = shared_key, mode=ECB, plain=m_random <b>XOR</b> 0)</p>
 <p>Hence we can iterete over [0, 0x1000000] to find the key</p>
