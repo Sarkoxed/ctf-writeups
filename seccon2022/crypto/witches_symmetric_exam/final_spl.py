@@ -1,0 +1,315 @@
+import re
+from time import time
+
+from Crypto.Util import _cpu_features
+from Crypto.Util._raw_api import (SmartPointer, VoidPointer, c_size_t,
+                                  c_uint8_ptr, create_string_buffer,
+                                  get_raw_buffer, load_pycryptodome_raw_lib)
+from Crypto.Util.number import bytes_to_long, long_to_bytes
+from Crypto.Util.Padding import pad, unpad
+from Crypto.Util.strxor import strxor
+from pwn import remote
+
+# C API by module implementing GHASH
+_ghash_api_template = """
+    int ghash_%imp%(uint8_t y_out[16],
+                    const uint8_t block_data[],
+                    size_t len,
+                    const uint8_t y_in[16],
+                    const void *exp_key);
+    int ghash_expand_%imp%(const uint8_t h[16],
+                           void **ghash_tables);
+    int ghash_destroy_%imp%(void *ghash_tables);
+"""
+
+
+def _build_impl(lib, postfix):
+    from collections import namedtuple
+
+    funcs = ("ghash", "ghash_expand", "ghash_destroy")
+    GHASH_Imp = namedtuple("_GHash_Imp", funcs)
+    try:
+        imp_funcs = [getattr(lib, x + "_" + postfix) for x in funcs]
+    except AttributeError:  # Make sphinx stop complaining with its mocklib
+        imp_funcs = [None] * 3
+    params = dict(zip(funcs, imp_funcs))
+    return GHASH_Imp(**params)
+
+
+def _get_ghash_clmul():
+    """Return None if CLMUL implementation is not available"""
+
+    if not _cpu_features.have_clmul():
+        return None
+    try:
+        api = _ghash_api_template.replace("%imp%", "clmul")
+        lib = load_pycryptodome_raw_lib("Crypto.Hash._ghash_clmul", api)
+        result = _build_impl(lib, "clmul")
+    except OSError:
+        result = None
+    return result
+
+
+gsh_clmul = _get_ghash_clmul()
+
+
+class _GHASH(object):
+    """GHASH function defined in NIST SP 800-38D, Algorithm 2.
+    If X_1, X_2, .. X_m are the blocks of input data, the function
+    computes:
+       X_1*H^{m} + X_2*H^{m-1} + ... + X_m*H
+    in the Galois field GF(2^256) using the reducing polynomial
+    (x^128 + x^7 + x^2 + x + 1).
+    """
+
+    def __init__(self, subkey, ghash_c):
+        assert len(subkey) == 16
+
+        self.ghash_c = ghash_c
+
+        self._exp_key = VoidPointer()
+        result = ghash_c.ghash_expand(c_uint8_ptr(subkey), self._exp_key.address_of())
+        if result:
+            raise ValueError("Error %d while expanding the GHASH key" % result)
+
+        self._exp_key = SmartPointer(self._exp_key.get(), ghash_c.ghash_destroy)
+
+        # create_string_buffer always returns a string of zeroes
+        self._last_y = create_string_buffer(16)
+
+    def update(self, block_data):
+        assert len(block_data) % 16 == 0
+
+        result = self.ghash_c.ghash(
+            self._last_y,
+            c_uint8_ptr(block_data),
+            c_size_t(len(block_data)),
+            self._last_y,
+            self._exp_key.get(),
+        )
+        if result:
+            raise ValueError("Error %d while updating GHASH" % result)
+
+        return self
+
+    def digest(self):
+        return get_raw_buffer(self._last_y)
+
+
+def params():
+    msg = r.recvline()
+    return re.findall(b"ciphertext: (.*)", msg)[0].decode()
+
+
+def send(data):
+    if isinstance(data, list):
+        to_send = bytes(data).hex()
+    elif isinstance(data, bytes):
+        to_send = data.hex()
+    elif isinstance(data, str):
+        to_send = data
+    r.sendline(to_send.encode())
+
+
+def send_and_get_ans(data):
+    r.recvuntil(b"ciphertext:")
+    send(data)
+    return r.recvline().decode()
+
+
+def recover_encrypted_block(block):
+    print("Starting OFB padding oracle attack")
+
+    if isinstance(block, bytes):
+        block = list(block)
+
+    counter = 1
+    chosen_pt = [0] * 16
+    for _ in range(16):
+        for b in range(256):
+            chosen_pt[16 - _ - 1] = b
+            ans = send_and_get_ans(block + chosen_pt)
+            if _ == 15 and "gcm" in ans:
+                break
+            if "gcm" in ans:
+                for i in range(counter + 1):
+                    chosen_pt[16 - 1 - i] ^= counter + 1
+                    chosen_pt[16 - 1 - i] ^= counter
+                print(f"Attacked {_+1}/{len(block)} bytes")
+                counter += 1
+                break
+    for i in range(len(chosen_pt)):
+        chosen_pt[i] ^= 0x10
+    return bytes(chosen_pt)
+
+
+def recover_needed_encrypted_ivs(ct, num=10):
+    print("Started recovering first encrypted ivs")
+    ivs = [recover_encrypted_block(ct[:16])]
+    print(ivs)
+    for _ in range(num):
+        print("Started recovering iv" + str(_ + 1))
+        ivs.append(recover_encrypted_block(ivs[-1]))
+
+        print(f"Recovered iv{str(_+1)} {ivs[-1].hex()}")
+    return b"".join(ivs)
+
+
+def retrieve_encrypted_zeros():
+    print("Started encrypting zeroes")
+    enc_zeros = recover_encrypted_block(list(bytes.fromhex("0" * 32)))
+    print("Found encrypted zeroes " + enc_zeros.hex())
+    return enc_zeros
+
+
+def recover_encrypted_block(block):
+    print("Starting OFB padding oracle attack")
+
+    if isinstance(block, bytes):
+        block = list(block)
+
+    counter = 1
+    chosen_pt = [0] * 16
+    for _ in range(16):
+        for b in range(256):
+            chosen_pt[16 - _ - 1] = b
+            ans = send_and_get_ans(block + chosen_pt)
+            if _ == 15 and "gcm" in ans:
+                break
+            if "gcm" in ans:
+                for i in range(counter + 1):
+                    chosen_pt[16 - 1 - i] ^= counter + 1
+                    chosen_pt[16 - 1 - i] ^= counter
+                print(f"Attacked {_+1}/{len(block)} bytes")
+                counter += 1
+                break
+    for i in range(len(chosen_pt)):
+        chosen_pt[i] ^= 0x10
+    return bytes(chosen_pt)
+
+
+def recover_needed_encrypted_ivs(ct, num=10):
+    print("Started recovering first encrypted ivs")
+    ivs = [recover_encrypted_block(ct[:16])]
+    print(ivs)
+    for _ in range(num):
+        print("Started recovering iv" + str(_ + 1))
+        ivs.append(recover_encrypted_block(ivs[-1]))
+
+        print(f"Recovered iv{str(_+1)} {ivs[-1].hex()}")
+    return b"".join(ivs)
+
+
+def retrieve_encrypted_zeros():
+    print("Started encrypting zeroes")
+    enc_zeros = recover_encrypted_block(list(bytes.fromhex("0" * 32)))
+    print("Found encrypted zeroes " + enc_zeros.hex())
+    return enc_zeros
+
+
+def ghash(block, H_k):  # ghash function
+    ghash_c = gsh_clmul
+    fill = (16 - (len(block) % 16)) % 16 + 8
+    ghash_in = block + b"\x00" * fill + long_to_bytes(8 * len(block), 8)
+    j0 = _GHASH(H_k, ghash_c).update(ghash_in).digest()
+    return j0
+
+
+def counter(IV, count):  # adding counter to IV0
+    return long_to_bytes(bytes_to_long(IV) + count)
+
+
+def decrypt_spell(
+    gcm_tag, nonce, ciphertext, zero_key
+):  # spell decryption + retrieving gcm ivs
+    spell = b""
+    enc_ivs = []
+    cipher_blocks = [ciphertext[i : i + 16] for i in range(0, len(ciphertext), 16)]
+    print()
+    print(len(cipher_blocks), cipher_blocks)
+    print()
+    initvector = ghash(nonce, zero_key)  # counter0
+
+    iv0 = recover_encrypted_block(initvector)  # encrypted counter0. Used only
+    # in tag generation.
+    enc_ivs.append(iv0)
+    for n, ct in enumerate(cipher_blocks):
+        round = n + 1
+        iv = counter(initvector, round)
+        enc_iv = recover_encrypted_block(iv)
+        enc_ivs.append(enc_iv)
+        R = min([len(enc_iv), len(ct)])
+        plaintext = strxor(enc_iv[:R], ct[:R])
+        spell += plaintext
+        print(f"\nPartially decrypted spell: {spell}, part {n+1}/{len(cipher_blocks)}")
+    return spell, enc_ivs
+
+
+def get_tag_single_block(iv0, block, zero_key):  # GCM tag generation procedure
+    signer = _GHASH(zero_key, gsh_clmul)
+    signer.update(block + b"\x00" * (16 - len(block)))
+    signer.update(long_to_bytes(len(block) * 8, 16))  # ct length
+    tag = signer.digest()
+    tag = strxor(tag, iv0)
+    return tag
+
+
+def final(enc_ivs, zero_key, nonce):  # GCM encryption
+    plaintext = b"give me key"
+    plaintext = plaintext
+
+    enc_iv = enc_ivs[1]
+    ciphertext = strxor(plaintext, enc_iv[:11])
+
+    tag = get_tag_single_block(enc_ivs[0], ciphertext, zero_key)
+
+    return pad(tag + nonce + ciphertext, 16)
+
+
+def recover_gcm_ct(ivs, ofb_ct):
+    ofb_ct = ofb_ct[16:]
+    assert len(ivs) >= len(ofb_ct)
+    return strxor(ofb_ct, ivs[: len(ofb_ct)])
+
+
+start = time()
+r = remote("witches-symmetric-exam.seccon.games", 8080)
+ct = params()
+print("___________________________________________________________")
+print("Initial ciphertext: ", ct)
+ct = bytes.fromhex(ct)
+
+print("___________________________________________________________")
+print("Start of recovering the encrypted OFB ivs and E(0^128)")
+ivs = recover_needed_encrypted_ivs(ct, (len(ct) - 16) // 16 - 1)
+print("Recovered ofb ivs = ", ivs.hex())
+print("___________________________________________________________")
+
+enc_zero = retrieve_encrypted_zeros()
+
+print("___________________________________________________________")
+print("Start of recovering the GCM ciphertext output")
+gcm_ct = recover_gcm_ct(ivs, ct)
+print(f"Retrieved gcm_ct: {gcm_ct.hex()}")
+
+gcm_tag, gcm_nonce, gcm_ct = gcm_ct[:16], gcm_ct[16:32], unpad(gcm_ct[32:], 16)
+
+print("___________________________________________________________")
+print("Start of recovering the spell and encrypted GCM ivs")
+spell, enc_ivs = decrypt_spell(gcm_tag, gcm_nonce, gcm_ct, enc_zero)
+
+print("___________________________________________________________")
+print(f"The spell is: {spell.decode()}")
+print("___________________________________________________________")
+print(enc_ivs, gcm_nonce)
+
+payload = final(enc_ivs, enc_zero, gcm_nonce)
+payload = ct.hex()[:32] + strxor(payload, ivs[: len(payload)]).hex()
+r.sendline(payload.encode())
+r.sendline(spell)
+m = r.recvuntil(b"spell:")
+flag = r.recvline()
+r.close()
+end = time()
+
+print(flag, end - start)
