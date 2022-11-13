@@ -1,8 +1,8 @@
-from pwn import remote
 import re
-from Crypto.Util.number import long_to_bytes, getStrongPrime, bytes_to_long
 from random import randint
-from gmpy2 import mpq
+
+from Crypto.Util.number import bytes_to_long, getStrongPrime, long_to_bytes
+from pwn import remote
 
 d = 0
 
@@ -22,7 +22,6 @@ def valid_pad_2(r, c):
         return True
     elif x == "False":
         return False
-    return "pizda"
 
 
 # padding format: 0b0011111111........
@@ -46,8 +45,6 @@ def params_1():
     global d
     d = pow(e, -1, phi)
 
-    print(length, n, flag_text)
-    exit(0)
     # Oops! encrypt without padding!
     c = pow(flag_text, e, n)
     return r, n, length, c, 2**16 + 1
@@ -68,8 +65,8 @@ def params_2():
     return r, n, length, c, 2**16 + 1
 
 
-params = params_2
-valid_pad = valid_pad_2
+params = params_1
+valid_pad = valid_pad_1
 
 r, n, length, c, e = params()
 t1 = n.bit_length()
@@ -82,33 +79,41 @@ print("Started attack")
 k = len(long_to_bytes(n))
 UB = int(x1, 2) + 1
 LB = int(x0, 2)
-oracle_calls = 0
 
 while True:
-    s0 = randint(1, n - 1)
+    s0 = randint(LB // 2**(length), UB // 2**(length - 1))
     c0 = (c * pow(s0, e, n)) % n
     oracle_calls += 1
     if valid_pad(r, c0):
         con = True
         break
 
-
 print(oracle_calls)
 global_oracle, oracle_calls = oracle_calls, 0
 
 c0 = (c * pow(s0, e, n)) % n
 Ms = set([(LB, UB - 1)])
-round = 1
+rounds = 1
 
-s = floor(UB, n)
+#s = floor(UB, n)
+s = 1
 while True:
-    print("Round = ", round, end=" ", flush=True)
+    print("Round = ", rounds, end=" ", flush=True)
+#    if round == 1:
+#        for si in range(s, n):
+#            c1 = (c0 * pow(si, e, n)) % n
+#            oracle_calls += 1
+#            if valid_pad(r, c1):
+#                print(f"Round {round} oracle calls: ", oracle_calls)
+#                global_oracle, oracle_calls = global_oracle + oracle_calls, 0
+#                s = si
+#                break
     if len(Ms) >= 2:
         for si in range(s + 1, n):
             c1 = (c0 * pow(si, e, n)) % n
             oracle_calls += 1
             if valid_pad(r, c1):
-                print(f"Round {round} oracle calls: ", oracle_calls)
+                print(f"Round {rounds} oracle calls: ", oracle_calls)
                 global_oracle, oracle_calls = global_oracle + oracle_calls, 0
                 s = si
                 break
@@ -117,16 +122,16 @@ while True:
         a, b = list(Ms)[0]
         flag = False
 
-        ri_start = ceil(2 * (b * s - LB), n)
+        ri_start = ceil(16 * (b * s - LB), n)
         for ri in range(ri_start, n):
             si_start = ceil(LB + ri * n, b)
-            si_end = floor(LB - 1 + ri * n, a)
+            si_end = floor(UB - 1 + ri * n, a)
 
             for si in range(si_start, si_end + 1):
                 c1 = (c0 * pow(si, e, n)) % n
                 oracle_calls += 1
                 if valid_pad(r, c1):
-                    print(f"Round {round} oracle calls: ", oracle_calls)
+                    print(f"Round {rounds} oracle calls: ", oracle_calls)
                     global_oracle, oracle_calls = global_oracle + oracle_calls, 0
                     s = si
                     flag = True
@@ -149,13 +154,12 @@ while True:
     if len(tmp) > 0:
         Ms = tmp
 
-    if round % 20 == 0:
-        print(Ms)
+    print(Ms)
 
     if len(Ms) == 1:
         a, b = list(Ms)[0]
         if a == b:
-            print(f"Finished in {round} rounds. Total oracle calls: {global_oracle}.")
+            print(f"Finished in {rounds} rounds. Total oracle calls: {global_oracle}.")
             print(long_to_bytes((a * pow(s0, -1, n)) % n))
             exit(0)
-    round += 1
+    rounds += 1
