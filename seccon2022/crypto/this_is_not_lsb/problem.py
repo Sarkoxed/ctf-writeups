@@ -8,7 +8,6 @@ n = p * q
 phi = (p - 1) * (q - 1)
 
 d = pow(e, -1, phi)
-
 print(f"n = {n}")
 print(f"e = {e}")
 print(f"flag_length = {flag.bit_length()}")
