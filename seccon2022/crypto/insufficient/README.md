@@ -61,8 +61,10 @@ params = params = [((60869260150988672427352228669837262044612209511033600096964
 
 The main idea behind the solution is the <a href=https://github.com/Sarkoxed/ctf-writeups/blob/master/seccon2022/crypto/insufficient/BarakShaniPhD.pdf>Hidden Number Problems</a>. Especially section 5.1 Solutions. However their Lattice did not work out for me however I was able to come up with a solution, based on their one.
 
-Consider the Lattice, spanned by the raws of the $ 10x10 $ matrix:<br>
-$ L =
+Consider the Lattice, spanned by the raws of the $10$x$10$ matrix:<br>
+
+```math
+L =
 \begin{bmatrix}
    p & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
    0 & p & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
@@ -75,37 +77,34 @@ $ L =
    y_1^2 & y_2^2 & y_3^2 & y_4^2 & 0 & 0 & 0 & 0 & t & 0 \\
    y_1^3 & y_2^3 & y_3^3 & y_4^3 & 0 & 0 & 0 & 0 & 0 & t
 \end{bmatrix}
-$
+```
 
 And two vectors:
 
-$ \vec{s} = 
-\begin{pmatrix}
-   -r_1 & -r_2 & -r_3 & -r_4 & a_1 & a_2 & a_3 & b_1 & b_2 & b_3\\
-\end{pmatrix}
-$
+```math
+\vec{s} = (-r_1, -r_2, -r_3, -r_4, a_1, a_2, a_3, b_1, b_2, b_3)
+```
 
-$ \vec{h} = 
-\begin{pmatrix}
-   w_1 & w_2 & w_3 & w_4 & 0 & 0 & 0 & 0 & 0 & 0\\
-\end{pmatrix}
-$
+```math
+\vec{h} = (w_1, w_2, w_3, w_4, 0, 0, 0, 0, 0, 0)
+```
 
-Note that vector 
+Note that the vector 
 
-$ \vec{u} = 
-\begin{pmatrix}
-   {w_1 - c z_1 - s} & {w_2 - c z_2 - s} & {w_3 - c z_3 - s} & {w_4 - c z_4 - s} & a_1 t & a_2 t & a_3 t & b_1 t & b_2 t & b_3 t\\
-\end{pmatrix}
- = \vec{s} L $
- 
-Note that 
-$ \begin{Vmatrix} {\vec{h} - \vec{u}} \end{Vmatrix}^{\!2} = \displaystyle\sum_{i=0}^4(c z_i - s)^2 + a_1^2 t^2 + a_2^2 t^2 + a_3^2 t^2 + b_1^2 t^2 + b_2^2 t^2 + b_3^2 t^2 \le 4 (2^{128} 2^{128} - 2^{128})^2 + 6 * t^2 (2^{128})^2 \approx 2^{514} + 3 * 2^{257} t^2
-$
+```math
+\vec{u} = ({w_1 - c z_1 - s}, {w_2 - c z_2 - s}, {w_3 - c z_3 - s}, {w_4 - c z_4 - s}, a_1 t, a_2 t, a_3 t, b_1 t, b_2 t, b_3 t) = \vec{s} L
+```
+Hence it is within the Lattice!
+
+Furthermore
+
+```math
+\begin{Vmatrix} {\vec{h} - \vec{u}} \end{Vmatrix}^{\!2} = \displaystyle\sum_{i=0}^4(c z_i - s)^2 + a_1^2 t^2 + a_2^2 t^2 + a_3^2 t^2 + b_1^2 t^2 + b_2^2 t^2 + b_3^2 t^2 \le 4 (2^{128} 2^{128} - 2^{128})^2 + 6 * t^2 (2^{128})^2 \approx 2^{514} + 3 * 2^{257} t^2
+```
 
 Using Gaussian expected shortest length we can restrict $t$ to make possible the use of Babai closest vertex/plane algorithm to find the Approximate Closest Vector $\vec{u}$ to $\vec{h}$ in $L$ with reduced basis. Also we need this norm to be as small as possible.
 
-So, we should find $t$, such that $$ 2^{514} + 3 * 2^{257} t^2 \lt \frac{ (\Gamma (1 + \frac{n}{2})det(L))^{\frac{2}{n}} }{\pi} = \frac{ (120 p^4 t^6)^{\frac{1}{5}} }{\pi} $$
+So, we should find $t$, such that $$2^{514} + 3 * 2^{257} t^2 \lt \frac{ (\Gamma (1 + \frac{n}{2})det(L))^{\frac{2}{n}} }{\pi} = \frac{ (120 p^4 t^6)^{\frac{1}{5}} }{\pi}$$
 
 We can find the turning point via binary search!
 
@@ -134,7 +133,7 @@ print(f(x=b).n(), b)
     -1.07176730929733e140 251028658364543899663335425
 
 
-Now we can assume that for $ t \ge 251028658364543899663335425 $ this inequality holds.
+Now we can assume that for $t \ge 251028658364543899663335425$ this inequality holds.
 
 
 ```python
@@ -183,7 +182,7 @@ print(s)
     (-3788473450022742507797205428359131458883090620125715480516636644666253357085237853861265276777234820444576367858685461658224947154247995799840283189799842364604042814472860901973742122656190763446357734856697811441170615800167767277155233860204167097801176391080592098338404898415844429826771077805730094404287472481610447752223934820033752325791, -272674018717101800614776524069415159863363984203554741202583344835752007363583784909574517690355428611618193730772879760872221020484222542365276986651635669105336395834558798543523285709325686668416435036667176002796050464342116311786243284826597650685414093119279797667582363298514044038498692773163491595434623936189155239263043808990541414012, -1262483761334323490652006913517659565556009174110757765688909130366092015651092092566993097729417172237584887189965982930589552615824770118199191192013006019585344677112448536349299377978905803636814134481898603348141818511774231441943553642574816457204241953306163478653939202642039603359304891924866526571469707813120784710703852321742388926608, -2738914733803296418428205286039060243899551569183374085482599581355475941348887258845483483548725033674983908663309882321778222544582503209093588868738095161957191280766671823962708597193786381474575240223688848187045778621629326750810845312043862968921618140490645568531059283837280231663754938004458055182277282757035551708156840416504316755726, 319946859331022505606006682830489529550, 152251339815807627609342474617581741055, 137751761597342098624908697775689190697, 337281036453915579622200616302875159873, 150513307904359194457545638585602396040, 27998232432567560780529247469815955088)
 
 
-We have successfully recovered $ a_1, a_2, a_3, b_1, b_2, b_3 $
+We have successfully recovered $a_1, a_2, a_3, b_1, b_2, b_3$
 
 Now we can use a few triks to find $s$ and $c$
 
@@ -201,9 +200,9 @@ for _ in range(4):
 r1, r2, r3, r4 = rs
 ```
 
-$$ c z_1 + s = r_1 \\ c z_2 + s = r_2 \\ c z_3 + s = r_3 \\ c z_1 + s = r_4 $$
+$$c z_1 + s = r_1 \\ c z_2 + s = r_2 \\ c z_3 + s = r_3 \\ c z_1 + s = r_4$$
 
-Sice the values are pretty random, we can assume that the   $ gcd(r_2 - r_1, r_3 - r_2, r_4 - r_3) = c $
+Sice the values are pretty random, we can assume that the   $gcd(r_2 - r_1, r_3 - r_2, r_4 - r_3) = c$
 
 
 ```python
