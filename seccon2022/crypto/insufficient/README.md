@@ -175,6 +175,7 @@ M, h = gen_matrix(p, params, t)
 m = M.LLL()
 m = [x for x in m]
 u = Babai_closest_vertex(m, h)
+assert (u - h).norm() < (120 * p**4 * t**6)**(1/10)/sqrt(pi)
 s = M.solve_left(u)
 print(s)
 ```
