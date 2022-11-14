@@ -69,7 +69,7 @@ The main idea behind the solution is literally padding oracle. We have <code>tem
 1. Find all the E(ofb_iv) using Padding Oracle attack. Hence we retrieve the encrypted data too.
 2. After restoring <code>ofb_input</code>, we get padded <code>gc_tag + gcm_nonce + gcm_ciphertext</code>.
 3. The AES GCM MODE works almost the same as the AES CTR mode, with a few significant differences:
-    - IV(nonce), when it's not 92 bits(our case) is calculated using special GHASH function, which performs several calculations in GF(2**128)
+    - IV(nonce), when it's not 92 bits(our case) is calculated using special GHASH function, which performs several calculations in GF(2**256)
     - The counter is not concatinated with the IV, but is added literally.
     - In addition to ciphertext, it produces the TAG(read signature), which is verified during decryption.
     - GHASH uses special H_k which is simply ECB(128 bit zero string) using the same key as in GCM.
@@ -84,7 +84,7 @@ The main idea behind the solution is literally padding oracle. We have <code>tem
 
 <b>Remark</b><br>
 It takes very long time to perform 6 padding oracle attacks. It took us about an hour to execute.
-
+Also I was not able to repeat the attack after the CTF end, but I had the output from my attack, so I included it here, while testing the exploit locally.
 
 ```python
 from pwn import remote
@@ -453,7 +453,6 @@ r.close()
     Attacked 15/16 bytes
     Recovered iv3 8a1795d69b856eb8cffafa008b38479f
     recovered ofb ivs = 896da48748edeb14e8c32dfa65d6f04b473883366ba295809b16fbb2dec81d816cb2bbcd3edc499c7283b4814dc189c78a1795d69b856eb8cffafa008b38479f
-    8a1795d69b856eb8cffafa008b38479f6cb2bbcd3edc499c7283b4814dc189c7473883366ba295809b16fbb2dec81d81
     ___________________________________________________________
     Started encrypting zeroes
     Starting OFB padding oracle attack
