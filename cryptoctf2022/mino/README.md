@@ -14,7 +14,8 @@ jupyter:
 
 <h>Task:</h>
 <br>
-```||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+```
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 | Hi crypto programmers! I'm looking for some very special permutation |
 | p name MINO such that sum(p(i) * (-2)^i) = 0 from 0 to n - 1, for    |
 | example for n = 6, the permutation p = (4, 2, 6, 5, 3, 1) is MINO:   |
@@ -22,9 +23,9 @@ jupyter:
 | In each step find such permutation and send to server, if there is   |
 | NOT such permutation for given n, just send `TINP', good luck :)     |
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-| Send a MINO permutation of length = 3 separated by comma:</text>```
+| Send a MINO permutation of length = 3 separated by comma:</text>
+```
 
-<!-- #region -->
 <p>We have an equation:</p>
 <code>a1 * (-2)**0 + a2 * (-2)**1  + a3 * (-2)**2 + a4 * (-2)**3 + ... + an * (-2)**(n-1) = f(n) = 0</code>
 <br><code>Where ai in [1, n]</code><br>
