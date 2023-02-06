@@ -139,13 +139,11 @@ def get_ass(p):
     if (p - 1) % 5 != 0:       # (p - 1) should be devisible by 5 to make an element with order 5 exist.
         return None
 
-    ass = [1]
     while True:
         a = pow(randint(1, p - 1), (p - 1) // 5, p)
-        if a != 1 and a not in ass:
-            ass.append(a)
-        if len(ass) == 5:
+        if a != 1:
             break
+    ass = [pow(a, i, p) for i in range(5)]
     return ass[1:]
 ```
 
