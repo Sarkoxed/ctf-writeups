@@ -1,0 +1,1222 @@
+06/08/24 19:44:41, 
+06/08/24 19:44:41, ****************************
+06/08/24 19:44:41, Starting factorization of 116944626321824780156025769274407946879848012038003396401917009490312554390211710922788434617196041781070575172506414310157065679903889038404384070855698545281076545778037611458504051999113369842475845250927860297915842417691324859405030004239855072955778530253894403222886474972431525267104143567235595592232
+06/08/24 19:44:41, using pretesting plan: normal
+06/08/24 19:44:41, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:44:41, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:44:41, ****************************
+06/08/24 19:44:41, div: found prime factor = 2
+06/08/24 19:44:41, div: found prime factor = 2
+06/08/24 19:44:41, div: found prime factor = 2
+06/08/24 19:44:41, div: found prime factor = 3
+06/08/24 19:44:41, div: found prime factor = 7
+06/08/24 19:44:41, rho: x^2 + 3, starting 1000 iterations on C306
+06/08/24 19:44:41, rho: x^2 + 2, starting 1000 iterations on C306
+06/08/24 19:44:42, rho: x^2 + 1, starting 1000 iterations on C306
+06/08/24 19:44:42, pm1: starting B1 = 150K, B2 = gmp-ecm default on C306
+06/08/24 19:44:42, prp21 = 135924635270233844651
+06/08/24 19:44:42, current ECM pretesting depth: 0.000000
+06/08/24 19:44:42, scheduled 30 curves at B1=2000 toward target pretesting depth of 88.000000
+06/08/24 19:44:43, Finished 30 curves using GMP-ECM method on C286 input, B1=2k, B2=gmp-ecm default
+06/08/24 19:44:43, current ECM pretesting depth: 15.177725
+06/08/24 19:44:43, scheduled 74 curves at B1=11000 toward target pretesting depth of 88.000000
+06/08/24 19:44:49, Finished 74 curves using GMP-ECM method on C286 input, B1=11k, B2=gmp-ecm default
+06/08/24 19:44:49, current ECM pretesting depth: 20.242996
+06/08/24 19:44:49, scheduled 214 curves at B1=50000 toward target pretesting depth of 88.000000
+06/08/24 19:44:54, Finished 18 curves using GMP-ECM method on C286 input, B1=50k, B2=gmp-ecm default
+06/08/24 19:44:54, ecm work completed:
+06/08/24 19:44:54, 	t15: 9.74
+06/08/24 19:44:54, 	t20: 1.89
+06/08/24 19:44:54, 	t25: 0.13
+06/08/24 19:44:54, 	estimated sum of completed work is t20.66
+06/08/24 19:44:54, c286 cofactor = 5121212683906879604801429385568641374597189587145579729940879293946457559454389577496014621717038747118938556866939906334804781984380528072917121311805546885704559016136813680568642981294775849789500939931213621270797443054090502646530277256099122817100846058254130692776096079667727699
+06/08/24 19:44:54, Total factoring time = 13.5016 seconds
+06/08/24 19:46:19, 
+06/08/24 19:46:19, ****************************
+06/08/24 19:46:19, Starting factorization of 18546282241365712861397940385587957583862656888022798930402149901835269089520149789549357481085531516943633975114571944968328833559033909671282226106623126
+06/08/24 19:46:19, using pretesting plan: normal
+06/08/24 19:46:19, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:46:19, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:46:19, ****************************
+06/08/24 19:46:19, div: found prime factor = 2
+06/08/24 19:46:19, prp154 = 9273141120682856430698970192793978791931328444011399465201074950917634544760074894774678740542765758471816987557285972484164416779516954835641113053311563
+06/08/24 19:46:19, Total factoring time = 0.1898 seconds
+06/08/24 19:46:27, 
+06/08/24 19:46:27, ****************************
+06/08/24 19:46:27, Starting factorization of 37092564482731425722795880771175915167725313776045597860804299803670538179040299579098714962171063033887267950229143889936657667118067819342564452213246255
+06/08/24 19:46:27, using pretesting plan: normal
+06/08/24 19:46:27, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:46:27, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:46:27, ****************************
+06/08/24 19:46:27, div: found prime factor = 5
+06/08/24 19:46:27, div: found prime factor = 23
+06/08/24 19:46:27, div: found prime factor = 41
+06/08/24 19:46:27, rho: x^2 + 3, starting 1000 iterations on C151
+06/08/24 19:46:27, prp5 = 12953
+06/08/24 19:46:27, rho: x^2 + 3, starting 1000 iterations on C147
+06/08/24 19:46:27, rho: x^2 + 2, starting 1000 iterations on C147
+06/08/24 19:46:27, rho: x^2 + 1, starting 1000 iterations on C147
+06/08/24 19:46:27, pm1: starting B1 = 150K, B2 = gmp-ecm default on C147
+06/08/24 19:46:27, current ECM pretesting depth: 0.000000
+06/08/24 19:46:27, scheduled 30 curves at B1=2000 toward target pretesting depth of 45.230769
+06/08/24 19:46:28, prp15 = 113596309930937 (curve 31 stg2 B1=2000 sigma=3466659127 thread=0)
+06/08/24 19:46:28, Finished 30 curves using GMP-ECM method on C147 input, B1=2k, B2=gmp-ecm default
+06/08/24 19:46:28, current ECM pretesting depth: 15.177725
+06/08/24 19:46:28, scheduled 74 curves at B1=11000 toward target pretesting depth of 40.923077
+06/08/24 19:46:30, Finished 74 curves using GMP-ECM method on C133 input, B1=11k, B2=gmp-ecm default
+06/08/24 19:46:30, current ECM pretesting depth: 20.242996
+06/08/24 19:46:30, scheduled 214 curves at B1=50000 toward target pretesting depth of 40.923077
+06/08/24 19:46:40, prp24 = 336373108518219555640651 (curve 83 stg2 B1=50000 sigma=3187102951 thread=0)
+06/08/24 19:46:40, Finished 82 curves using GMP-ECM method on C133 input, B1=50k, B2=gmp-ecm default
+06/08/24 19:46:40, current ECM pretesting depth: 22.158884
+06/08/24 19:46:40, scheduled 132 curves at B1=50000 toward target pretesting depth of 33.846154
+06/08/24 19:46:43, prp22 = 1205902948217029775617 (curve 28 stg1 B1=50000 sigma=4154313461 thread=0)
+06/08/24 19:46:43, Finished 27 curves using GMP-ECM method on C110 input, B1=50k, B2=gmp-ecm default
+06/08/24 19:46:43, current ECM pretesting depth: 22.789725
+06/08/24 19:46:43, scheduled 105 curves at B1=50000 toward target pretesting depth of 27.384615
+06/08/24 19:46:43, prp89 = 13180653650925411621218426484027665916481333143430099489998897620378883363858314062513111
+06/08/24 19:46:43, Total factoring time = 16.5627 seconds
+06/08/24 19:51:06, 
+06/08/24 19:51:06, ****************************
+06/08/24 19:51:06, Starting factorization of 24060963279385003724780676179301140144794374634338728290238684078020654280715642895832368550079397674575981648722347278689849707297107343280525431041487202
+06/08/24 19:51:06, using pretesting plan: normal
+06/08/24 19:51:06, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:51:06, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:51:06, ****************************
+06/08/24 19:51:06, div: found prime factor = 2
+06/08/24 19:51:06, prp155 = 12030481639692501862390338089650570072397187317169364145119342039010327140357821447916184275039698837287990824361173639344924853648553671640262715520743601
+06/08/24 19:51:06, Total factoring time = 0.2018 seconds
+06/08/24 19:51:10, 
+06/08/24 19:51:10, ****************************
+06/08/24 19:51:10, Starting factorization of 48121926558770007449561352358602280289588749268677456580477368156041308561431285791664737100158795349151963297444694557379699414594214686561050862082974407
+06/08/24 19:51:10, using pretesting plan: normal
+06/08/24 19:51:10, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:51:10, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:51:10, ****************************
+06/08/24 19:51:10, div: found prime factor = 11
+06/08/24 19:51:10, div: found prime factor = 13
+06/08/24 19:51:10, div: found prime factor = 181
+06/08/24 19:51:10, rho: x^2 + 3, starting 1000 iterations on C151
+06/08/24 19:51:10, prp5 = 64817
+06/08/24 19:51:10, rho: x^2 + 3, starting 1000 iterations on C146
+06/08/24 19:51:10, rho: x^2 + 2, starting 1000 iterations on C146
+06/08/24 19:51:10, rho: x^2 + 1, starting 1000 iterations on C146
+06/08/24 19:51:11, pm1: starting B1 = 150K, B2 = gmp-ecm default on C146
+06/08/24 19:51:11, current ECM pretesting depth: 0.000000
+06/08/24 19:51:11, scheduled 30 curves at B1=2000 toward target pretesting depth of 44.923077
+06/08/24 19:51:11, Finished 30 curves using GMP-ECM method on C146 input, B1=2k, B2=gmp-ecm default
+06/08/24 19:51:11, current ECM pretesting depth: 15.177725
+06/08/24 19:51:11, scheduled 74 curves at B1=11000 toward target pretesting depth of 44.923077
+06/08/24 19:51:13, Finished 74 curves using GMP-ECM method on C146 input, B1=11k, B2=gmp-ecm default
+06/08/24 19:51:13, current ECM pretesting depth: 20.242996
+06/08/24 19:51:13, scheduled 214 curves at B1=50000 toward target pretesting depth of 44.923077
+06/08/24 19:51:43, Finished 214 curves using GMP-ECM method on C146 input, B1=50k, B2=gmp-ecm default
+06/08/24 19:51:43, pm1: starting B1 = 3750K, B2 = gmp-ecm default on C146
+06/08/24 19:51:44, current ECM pretesting depth: 25.332854
+06/08/24 19:51:44, scheduled 430 curves at B1=250000 toward target pretesting depth of 44.923077
+06/08/24 19:51:50, Finished 10 curves using GMP-ECM method on C146 input, B1=250k, B2=gmp-ecm default
+06/08/24 19:51:50, ecm work completed:
+06/08/24 19:51:50, 	t15: 39.74
+06/08/24 19:51:50, 	t20: 12.48
+06/08/24 19:51:50, 	t25: 1.25
+06/08/24 19:51:50, 	t30: 0.09
+06/08/24 19:51:50, 	estimated sum of completed work is t25.45
+06/08/24 19:51:50, c146 cofactor = 28683983725915947170464460156783537438235243508505532465319823771945019957600466375073499452779124384667102114534503148853285494358132888448321237
+06/08/24 19:51:50, Total factoring time = 39.7316 seconds
+06/08/24 19:52:28, 
+06/08/24 19:52:28, ****************************
+06/08/24 19:52:28, Starting factorization of 47284980634172097210151395703292953400125196662751200930745209450564300790164980230001443114539775730164136395386996885330264718277586800881368232842355327
+06/08/24 19:52:28, using pretesting plan: normal
+06/08/24 19:52:28, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:52:28, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:52:28, ****************************
+06/08/24 19:52:28, div: found prime factor = 1523
+06/08/24 19:52:28, rho: x^2 + 3, starting 1000 iterations on C152
+06/08/24 19:52:28, prp9 = 551860423
+06/08/24 19:52:28, rho: x^2 + 3, starting 1000 iterations on C143
+06/08/24 19:52:28, rho: x^2 + 2, starting 1000 iterations on C143
+06/08/24 19:52:28, rho: x^2 + 1, starting 1000 iterations on C143
+06/08/24 19:52:28, pm1: starting B1 = 150K, B2 = gmp-ecm default on C143
+06/08/24 19:52:28, current ECM pretesting depth: 0.000000
+06/08/24 19:52:28, scheduled 30 curves at B1=2000 toward target pretesting depth of 44.000000
+06/08/24 19:52:29, Finished 30 curves using GMP-ECM method on C143 input, B1=2k, B2=gmp-ecm default
+06/08/24 19:52:29, current ECM pretesting depth: 15.177725
+06/08/24 19:52:29, scheduled 74 curves at B1=11000 toward target pretesting depth of 44.000000
+06/08/24 19:52:31, Finished 74 curves using GMP-ECM method on C143 input, B1=11k, B2=gmp-ecm default
+06/08/24 19:52:31, current ECM pretesting depth: 20.242996
+06/08/24 19:52:31, scheduled 214 curves at B1=50000 toward target pretesting depth of 44.000000
+06/08/24 19:52:54, Finished 163 curves using GMP-ECM method on C143 input, B1=50k, B2=gmp-ecm default
+06/08/24 19:52:54, ecm work completed:
+06/08/24 19:52:54, 	t15: 30.45
+06/08/24 19:52:54, 	t20: 8.80
+06/08/24 19:52:54, 	t25: 0.81
+06/08/24 19:52:54, 	t30: 0.05
+06/08/24 19:52:54, 	estimated sum of completed work is t24.05
+06/08/24 19:52:54, c143 cofactor = 56259266121218263631564985309769264127912218263401828788982982557770464470737193106383768364690429367289970575645277239289725992835570245014163
+06/08/24 19:52:54, Total factoring time = 26.0106 seconds
+06/08/24 19:52:57, 
+06/08/24 19:52:57, ****************************
+06/08/24 19:52:57, Starting factorization of 37092564482731425722795880771175915167725313776045597860804299803670538179040299579098714962171063033887267950229143889936657667118067819342564452213246255
+06/08/24 19:52:57, using pretesting plan: normal
+06/08/24 19:52:57, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:52:57, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:52:57, ****************************
+06/08/24 19:52:57, div: found prime factor = 5
+06/08/24 19:52:57, div: found prime factor = 23
+06/08/24 19:52:57, div: found prime factor = 41
+06/08/24 19:52:57, rho: x^2 + 3, starting 1000 iterations on C151
+06/08/24 19:52:57, prp5 = 12953
+06/08/24 19:52:57, rho: x^2 + 3, starting 1000 iterations on C147
+06/08/24 19:52:57, rho: x^2 + 2, starting 1000 iterations on C147
+06/08/24 19:52:57, rho: x^2 + 1, starting 1000 iterations on C147
+06/08/24 19:52:57, pm1: starting B1 = 150K, B2 = gmp-ecm default on C147
+06/08/24 19:52:57, current ECM pretesting depth: 0.000000
+06/08/24 19:52:57, scheduled 30 curves at B1=2000 toward target pretesting depth of 45.230769
+06/08/24 19:52:58, prp15 = 113596309930937 (curve 27 stg2 B1=2000 sigma=1592402830 thread=0)
+06/08/24 19:52:58, Finished 26 curves using GMP-ECM method on C147 input, B1=2k, B2=gmp-ecm default
+06/08/24 19:52:58, current ECM pretesting depth: 0.000000
+06/08/24 19:52:58, scheduled 4 curves at B1=2000 toward target pretesting depth of 40.923077
+06/08/24 19:52:58, Finished 4 curves using GMP-ECM method on C133 input, B1=2k, B2=gmp-ecm default
+06/08/24 19:52:58, current ECM pretesting depth: 15.177725
+06/08/24 19:52:58, scheduled 74 curves at B1=11000 toward target pretesting depth of 40.923077
+06/08/24 19:53:00, Finished 74 curves using GMP-ECM method on C133 input, B1=11k, B2=gmp-ecm default
+06/08/24 19:53:00, current ECM pretesting depth: 20.242996
+06/08/24 19:53:00, scheduled 214 curves at B1=50000 toward target pretesting depth of 40.923077
+06/08/24 19:53:00, prp22 = 1205902948217029775617 (curve 2 stg2 B1=50000 sigma=1390653728 thread=0)
+06/08/24 19:53:00, Finished 1 curves using GMP-ECM method on C133 input, B1=50k, B2=gmp-ecm default
+06/08/24 19:53:00, current ECM pretesting depth: 20.266361
+06/08/24 19:53:00, scheduled 213 curves at B1=50000 toward target pretesting depth of 34.461538
+06/08/24 19:53:00, prp24 = 336373108518219555640651 (curve 3 stg2 B1=50000 sigma=2171312750 thread=0)
+06/08/24 19:53:00, Finished 2 curves using GMP-ECM method on C112 input, B1=50k, B2=gmp-ecm default
+06/08/24 19:53:00, current ECM pretesting depth: 20.313090
+06/08/24 19:53:00, scheduled 211 curves at B1=50000 toward target pretesting depth of 27.384615
+06/08/24 19:53:00, prp89 = 13180653650925411621218426484027665916481333143430099489998897620378883363858314062513111
+06/08/24 19:53:00, Total factoring time = 3.3666 seconds
+06/08/24 19:53:33, 
+06/08/24 19:53:33, ****************************
+06/08/24 19:53:33, Starting factorization of 43628352229305309318833012788627635039936268955147505738572000685755072584246424267542606492586362030364693847490642527427913786509131219426499430593727375
+06/08/24 19:53:33, using pretesting plan: normal
+06/08/24 19:53:33, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:53:33, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:53:33, ****************************
+06/08/24 19:53:33, div: found prime factor = 5
+06/08/24 19:53:33, div: found prime factor = 5
+06/08/24 19:53:33, div: found prime factor = 5
+06/08/24 19:53:33, div: found prime factor = 7
+06/08/24 19:53:33, div: found prime factor = 13
+06/08/24 19:53:33, div: found prime factor = 79
+06/08/24 19:53:33, div: found prime factor = 6553
+06/08/24 19:53:33, rho: x^2 + 3, starting 1000 iterations on C145
+06/08/24 19:53:33, rho: x^2 + 2, starting 1000 iterations on C145
+06/08/24 19:53:34, rho: x^2 + 1, starting 1000 iterations on C145
+06/08/24 19:53:34, pm1: starting B1 = 150K, B2 = gmp-ecm default on C145
+06/08/24 19:53:34, current ECM pretesting depth: 0.000000
+06/08/24 19:53:34, scheduled 30 curves at B1=2000 toward target pretesting depth of 44.615385
+06/08/24 19:53:34, Finished 30 curves using GMP-ECM method on C145 input, B1=2k, B2=gmp-ecm default
+06/08/24 19:53:34, current ECM pretesting depth: 15.177725
+06/08/24 19:53:34, scheduled 74 curves at B1=11000 toward target pretesting depth of 44.615385
+06/08/24 19:53:37, Finished 74 curves using GMP-ECM method on C145 input, B1=11k, B2=gmp-ecm default
+06/08/24 19:53:37, current ECM pretesting depth: 20.242996
+06/08/24 19:53:37, scheduled 214 curves at B1=50000 toward target pretesting depth of 44.615385
+06/08/24 19:54:07, Finished 214 curves using GMP-ECM method on C145 input, B1=50k, B2=gmp-ecm default
+06/08/24 19:54:07, pm1: starting B1 = 3750K, B2 = gmp-ecm default on C145
+06/08/24 19:54:08, current ECM pretesting depth: 25.332854
+06/08/24 19:54:08, scheduled 430 curves at B1=250000 toward target pretesting depth of 44.615385
+06/08/24 19:54:41, Finished 51 curves using GMP-ECM method on C145 input, B1=250k, B2=gmp-ecm default
+06/08/24 19:54:41, ecm work completed:
+06/08/24 19:54:41, 	t15: 47.94
+06/08/24 19:54:41, 	t20: 17.60
+06/08/24 19:54:41, 	t25: 2.07
+06/08/24 19:54:41, 	t30: 0.19
+06/08/24 19:54:41, 	t35: 0.01
+06/08/24 19:54:41, 	estimated sum of completed work is t25.93
+06/08/24 19:54:41, c145 cofactor = 7408838809246175768489923221013305662197516303153353194187408151224318022066993260413619862430151772579573481509588396319650449654855297187869607
+06/08/24 19:54:41, Total factoring time = 67.7522 seconds
+06/08/24 19:54:44, 
+06/08/24 19:54:44, ****************************
+06/08/24 19:54:44, Starting factorization of 50803406797540506233485017771475880563332855075441183887771005636206449379191048208905123544952744314934330169269517773047843875985773593325134824233281967
+06/08/24 19:54:44, using pretesting plan: normal
+06/08/24 19:54:44, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:54:44, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:54:44, ****************************
+06/08/24 19:54:44, div: found prime factor = 13
+06/08/24 19:54:44, rho: x^2 + 3, starting 1000 iterations on C154
+06/08/24 19:54:44, prp5 = 12613
+06/08/24 19:54:44, prp150 = 309835437171297661347480424784415838136067519320366556408656548714735403516463771864834959931162258200844855852444777811951307112843120305210953437743
+06/08/24 19:54:44, Total factoring time = 0.2040 seconds
+06/08/24 19:57:38, 
+06/08/24 19:57:38, ****************************
+06/08/24 19:57:38, Starting factorization of 34997830644159240124872863959484269748079341507775160235555121480211158545489902638573737594133143160714465656970763585707874963403721412859530365443133815
+06/08/24 19:57:38, using pretesting plan: normal
+06/08/24 19:57:38, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 19:57:38, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 19:57:38, ****************************
+06/08/24 19:57:38, div: found prime factor = 5
+06/08/24 19:57:38, div: found prime factor = 11
+06/08/24 19:57:38, div: found prime factor = 53
+06/08/24 19:57:38, rho: x^2 + 3, starting 1000 iterations on C152
+06/08/24 19:57:38, prp6 = 215531
+06/08/24 19:57:38, prp146 = 55704826029943598033432279395807217852834280066790979800719423844942210810727760204276429468481251630554608875191137827841530229709540953769395031
+06/08/24 19:57:38, Total factoring time = 0.1968 seconds
+06/08/24 20:02:42, 
+06/08/24 20:02:42, ****************************
+06/08/24 20:02:42, Starting factorization of 338793395035542176243636611688377061462789242246977746243449670368646368757801018606576511538428387528542087356438637345745172509169718696936935407382974866041352864827184064743556201675414931078522247167686094765388134196443434411329732037544485214410485164229406304608487487557386912962393326811431292061167
+06/08/24 20:02:42, using pretesting plan: normal
+06/08/24 20:02:42, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:02:42, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:02:42, ****************************
+06/08/24 20:02:42, rho: x^2 + 3, starting 1000 iterations on C309
+06/08/24 20:02:42, prp9 = 219154217
+06/08/24 20:02:42, rho: x^2 + 3, starting 1000 iterations on C301
+06/08/24 20:02:42, prp12 = 140606115121
+06/08/24 20:02:42, rho: x^2 + 3, starting 1000 iterations on C290
+06/08/24 20:02:43, rho: x^2 + 2, starting 1000 iterations on C290
+06/08/24 20:02:43, rho: x^2 + 1, starting 1000 iterations on C290
+06/08/24 20:02:44, pm1: starting B1 = 150K, B2 = gmp-ecm default on C290
+06/08/24 20:02:44, current ECM pretesting depth: 0.000000
+06/08/24 20:02:44, scheduled 30 curves at B1=2000 toward target pretesting depth of 89.230769
+06/08/24 20:02:44, Finished 30 curves using GMP-ECM method on C290 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:02:44, current ECM pretesting depth: 15.177725
+06/08/24 20:02:44, scheduled 74 curves at B1=11000 toward target pretesting depth of 89.230769
+06/08/24 20:02:51, Finished 74 curves using GMP-ECM method on C290 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:02:51, current ECM pretesting depth: 20.242996
+06/08/24 20:02:51, scheduled 214 curves at B1=50000 toward target pretesting depth of 89.230769
+06/08/24 20:04:14, Finished 214 curves using GMP-ECM method on C290 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:04:14, pm1: starting B1 = 3750K, B2 = gmp-ecm default on C290
+06/08/24 20:04:17, current ECM pretesting depth: 25.332854
+06/08/24 20:04:17, scheduled 430 curves at B1=250000 toward target pretesting depth of 89.230769
+06/08/24 20:16:37, Finished 430 curves using GMP-ECM method on C290 input, B1=250k, B2=gmp-ecm default
+06/08/24 20:16:37, pm1: starting B1 = 15M, B2 = gmp-ecm default on C290
+06/08/24 20:16:48, current ECM pretesting depth: 30.453325
+06/08/24 20:16:48, scheduled 904 curves at B1=1000000 toward target pretesting depth of 89.230769
+06/08/24 20:17:10, Finished 3 curves using GMP-ECM method on C290 input, B1=1M, B2=gmp-ecm default
+06/08/24 20:17:10, ecm work completed:
+06/08/24 20:17:10, 	t15: 124.74
+06/08/24 20:17:10, 	t20: 65.58
+06/08/24 20:17:10, 	t25: 9.80
+06/08/24 20:17:10, 	t30: 1.09
+06/08/24 20:17:10, 	t35: 0.09
+06/08/24 20:17:10, 	estimated sum of completed work is t30.47
+06/08/24 20:17:10, c290 cofactor = 10994636969953605471175060466407753838741169014838555486863060387247315178870741629417675664127591386109937888201972027548897941608857246286783719450005707687105016280677765581836348784761130136483677157647173259137323273824965214697106312794659959661304806266158984844156896424129472762631
+06/08/24 20:17:10, Total factoring time = 867.8327 seconds
+06/08/24 20:17:46, 
+06/08/24 20:17:46, ****************************
+06/08/24 20:17:46, Starting factorization of 9130461732748654865061522919884515494624647213821186148576467244062138985246019147780514284922654763623939371176922211877208914901863556820235956158055578
+06/08/24 20:17:46, using pretesting plan: normal
+06/08/24 20:17:46, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:17:46, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:17:46, ****************************
+06/08/24 20:17:46, div: found prime factor = 2
+06/08/24 20:17:46, div: found prime factor = 13
+06/08/24 20:17:46, div: found prime factor = 19
+06/08/24 20:17:46, rho: x^2 + 3, starting 1000 iterations on C152
+06/08/24 20:17:46, prp10 = 8285265479
+06/08/24 20:17:46, prp142 = 2230793461602687362914135319307778030849455844002088866588479252753664209738534100867867523236024174817607941704797173331617829413288871509453
+06/08/24 20:17:46, Total factoring time = 0.1965 seconds
+06/08/24 20:18:10, 
+06/08/24 20:18:10, ****************************
+06/08/24 20:18:10, Starting factorization of 18260923465497309730123045839769030989249294427642372297152934488124277970492038295561028569845309527247878742353844423754417829803727113640471912316111158
+06/08/24 20:18:10, using pretesting plan: normal
+06/08/24 20:18:10, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:18:10, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:18:10, ****************************
+06/08/24 20:18:10, div: found prime factor = 2
+06/08/24 20:18:10, prp154 = 9130461732748654865061522919884515494624647213821186148576467244062138985246019147780514284922654763623939371176922211877208914901863556820235956158055579
+06/08/24 20:18:10, Total factoring time = 0.2053 seconds
+06/08/24 20:18:16, 
+06/08/24 20:18:16, ****************************
+06/08/24 20:18:16, Starting factorization of 36521846930994619460246091679538061978498588855284744594305868976248555940984076591122057139690619054495757484707688847508835659607454227280943824632222319
+06/08/24 20:18:16, using pretesting plan: normal
+06/08/24 20:18:16, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:18:16, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:18:16, ****************************
+06/08/24 20:18:16, prp155 = 36521846930994619460246091679538061978498588855284744594305868976248555940984076591122057139690619054495757484707688847508835659607454227280943824632222319
+06/08/24 20:18:16, Total factoring time = 0.2513 seconds
+06/08/24 20:19:54, 
+06/08/24 20:19:54, ****************************
+06/08/24 20:19:54, Starting factorization of 232629847530142708674931213624455300806298477070143188756943010611261668887302391979110721429927691075554519893795839548660341051658141323139436549505886412609208783026275246163524955074825044924032051149073165754936040251246097105388677328171865682907067789628552459868059093502754734565187889947575014315695
+06/08/24 20:19:54, using pretesting plan: normal
+06/08/24 20:19:54, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:19:54, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:19:54, ****************************
+06/08/24 20:19:54, div: found prime factor = 5
+06/08/24 20:19:54, div: found prime factor = 79
+06/08/24 20:19:54, rho: x^2 + 3, starting 1000 iterations on C306
+06/08/24 20:19:55, prp12 = 124763260001
+06/08/24 20:19:55, rho: x^2 + 3, starting 1000 iterations on C295
+06/08/24 20:19:55, rho: x^2 + 2, starting 1000 iterations on C295
+06/08/24 20:19:55, rho: x^2 + 1, starting 1000 iterations on C295
+06/08/24 20:19:56, pm1: starting B1 = 150K, B2 = gmp-ecm default on C295
+06/08/24 20:19:56, current ECM pretesting depth: 0.000000
+06/08/24 20:19:56, scheduled 30 curves at B1=2000 toward target pretesting depth of 90.769231
+06/08/24 20:19:56, Finished 30 curves using GMP-ECM method on C295 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:19:56, current ECM pretesting depth: 15.177725
+06/08/24 20:19:56, scheduled 74 curves at B1=11000 toward target pretesting depth of 90.769231
+06/08/24 20:20:03, Finished 74 curves using GMP-ECM method on C295 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:20:03, current ECM pretesting depth: 20.242996
+06/08/24 20:20:03, scheduled 214 curves at B1=50000 toward target pretesting depth of 90.769231
+06/08/24 20:21:21, Finished 214 curves using GMP-ECM method on C295 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:21:21, pm1: starting B1 = 3750K, B2 = gmp-ecm default on C295
+06/08/24 20:21:23, current ECM pretesting depth: 25.332854
+06/08/24 20:21:23, scheduled 430 curves at B1=250000 toward target pretesting depth of 90.769231
+06/08/24 20:22:49, Finished 51 curves using GMP-ECM method on C295 input, B1=250k, B2=gmp-ecm default
+06/08/24 20:22:49, ecm work completed:
+06/08/24 20:22:49, 	t15: 47.94
+06/08/24 20:22:49, 	t20: 17.60
+06/08/24 20:22:49, 	t25: 2.07
+06/08/24 20:22:49, 	t30: 0.19
+06/08/24 20:22:49, 	t35: 0.01
+06/08/24 20:22:49, 	estimated sum of completed work is t25.93
+06/08/24 20:22:49, c295 cofactor = 4720430700964373251825558955071565443407772950003640382018978145831506067129116864761262478452877395512669016332644829778727364675225582000697646240407852832418605762939861429693887057920452339269649777132471877324610755606366888492373220445968360261796850895902290380007697876431025313872528141
+06/08/24 20:22:49, Total factoring time = 174.6244 seconds
+06/08/24 20:22:52, 
+06/08/24 20:22:52, ****************************
+06/08/24 20:22:52, Starting factorization of 194735948588531676109057630118627984554027874946642075648534505140324301758763622825215835118178546996065679478717781226282337469904381632664196122692992141835240983302192604860866050374568754119531354314588752283859953761951596258510136047032643535985894797016304954575485110929524968728638876677892804231527
+06/08/24 20:22:52, using pretesting plan: normal
+06/08/24 20:22:52, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:22:52, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:22:52, ****************************
+06/08/24 20:22:52, rho: x^2 + 3, starting 1000 iterations on C309
+06/08/24 20:22:52, rho: x^2 + 2, starting 1000 iterations on C309
+06/08/24 20:22:52, rho: x^2 + 1, starting 1000 iterations on C309
+06/08/24 20:22:53, pm1: starting B1 = 150K, B2 = gmp-ecm default on C309
+06/08/24 20:22:53, prp12 = 238876820087
+06/08/24 20:22:53, current ECM pretesting depth: 0.000000
+06/08/24 20:22:53, scheduled 30 curves at B1=2000 toward target pretesting depth of 91.384615
+06/08/24 20:22:53, Finished 30 curves using GMP-ECM method on C297 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:22:53, current ECM pretesting depth: 15.177725
+06/08/24 20:22:53, scheduled 74 curves at B1=11000 toward target pretesting depth of 91.384615
+06/08/24 20:23:00, Finished 74 curves using GMP-ECM method on C297 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:23:00, current ECM pretesting depth: 20.242996
+06/08/24 20:23:00, scheduled 214 curves at B1=50000 toward target pretesting depth of 91.384615
+06/08/24 20:23:02, prp21 = 442735881969166075421 (curve 6 stg1 B1=50000 sigma=1109519769 thread=0)
+06/08/24 20:23:02, Finished 5 curves using GMP-ECM method on C297 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:23:02, current ECM pretesting depth: 20.359819
+06/08/24 20:23:02, scheduled 209 curves at B1=50000 toward target pretesting depth of 85.230769
+06/08/24 20:24:12, Finished 209 curves using GMP-ECM method on C277 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:24:12, pm1: starting B1 = 3750K, B2 = gmp-ecm default on C277
+06/08/24 20:24:14, current ECM pretesting depth: 25.332854
+06/08/24 20:24:14, scheduled 430 curves at B1=250000 toward target pretesting depth of 85.230769
+06/08/24 20:24:26, Finished 8 curves using GMP-ECM method on C277 input, B1=250k, B2=gmp-ecm default
+06/08/24 20:24:26, ecm work completed:
+06/08/24 20:24:26, 	t15: 39.34
+06/08/24 20:24:26, 	t20: 12.23
+06/08/24 20:24:26, 	t25: 1.21
+06/08/24 20:24:26, 	t30: 0.09
+06/08/24 20:24:26, 	estimated sum of completed work is t25.43
+06/08/24 20:24:26, c277 cofactor = 1841312070237236640703961157608890536336389053927956257072800923443699509942371652620996061069830394158492177497054929109158817149221143243438731422667093885096131289975817103418704449609695587267900770492380937515308016175752594214905172633290805812145457773498725553088093701
+06/08/24 20:24:26, Total factoring time = 94.1776 seconds
+06/08/24 20:25:54, 
+06/08/24 20:25:54, ****************************
+06/08/24 20:25:54, Starting factorization of 199784018907021790490676849320463213566401376329948812802040498244270874009086459848356333054426573101415340946646405318990359570268380895978742715589222270249300892754086252935127964847029341659097053155904772627315113831470026662378343010598123713138412984443502753556944710390044745351710204697252340197455
+06/08/24 20:25:54, using pretesting plan: normal
+06/08/24 20:25:54, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:25:54, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:25:54, ****************************
+06/08/24 20:25:54, div: found prime factor = 5
+06/08/24 20:25:54, rho: x^2 + 3, starting 1000 iterations on C308
+06/08/24 20:25:54, rho: x^2 + 2, starting 1000 iterations on C308
+06/08/24 20:25:54, rho: x^2 + 1, starting 1000 iterations on C308
+06/08/24 20:25:55, pm1: starting B1 = 150K, B2 = gmp-ecm default on C308
+06/08/24 20:25:55, current ECM pretesting depth: 0.000000
+06/08/24 20:25:55, scheduled 30 curves at B1=2000 toward target pretesting depth of 94.769231
+06/08/24 20:25:55, Finished 30 curves using GMP-ECM method on C308 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:25:55, current ECM pretesting depth: 15.177725
+06/08/24 20:25:55, scheduled 74 curves at B1=11000 toward target pretesting depth of 94.769231
+06/08/24 20:26:02, Finished 74 curves using GMP-ECM method on C308 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:26:02, current ECM pretesting depth: 20.242996
+06/08/24 20:26:02, scheduled 214 curves at B1=50000 toward target pretesting depth of 94.769231
+06/08/24 20:26:10, Finished 22 curves using GMP-ECM method on C308 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:26:10, ecm work completed:
+06/08/24 20:26:10, 	t15: 10.31
+06/08/24 20:26:10, 	t20: 2.08
+06/08/24 20:26:10, 	t25: 0.15
+06/08/24 20:26:10, 	estimated sum of completed work is t20.76
+06/08/24 20:26:10, c308 cofactor = 39956803781404358098135369864092642713280275265989762560408099648854174801817291969671266610885314620283068189329281063798071914053676179195748543117844454049860178550817250587025592969405868331819410631180954525463022766294005332475668602119624742627682596888700550711388942078008949070342040939450468039491
+06/08/24 20:26:10, Total factoring time = 16.5095 seconds
+06/08/24 20:26:19, 
+06/08/24 20:26:19, ****************************
+06/08/24 20:26:19, Starting factorization of 199784018907021790490676849320463213566401376329948812802040498244270874009086459848356333054426573101415340946646405318990359570268380895978742715589222270249300892754086252935127964847029341659097053155904772627315113831470026662378343010598123713138412984443502753556944710390044745351710204697252340197455
+06/08/24 20:26:19, using pretesting plan: normal
+06/08/24 20:26:19, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:26:19, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:26:19, ****************************
+06/08/24 20:26:19, div: found prime factor = 5
+06/08/24 20:26:19, rho: x^2 + 3, starting 1000 iterations on C308
+06/08/24 20:26:20, rho: x^2 + 2, starting 1000 iterations on C308
+06/08/24 20:26:20, rho: x^2 + 1, starting 1000 iterations on C308
+06/08/24 20:26:21, pm1: starting B1 = 150K, B2 = gmp-ecm default on C308
+06/08/24 20:26:21, current ECM pretesting depth: 0.000000
+06/08/24 20:26:21, scheduled 30 curves at B1=2000 toward target pretesting depth of 94.769231
+06/08/24 20:26:21, Finished 30 curves using GMP-ECM method on C308 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:26:21, current ECM pretesting depth: 15.177725
+06/08/24 20:26:21, scheduled 74 curves at B1=11000 toward target pretesting depth of 94.769231
+06/08/24 20:26:28, Finished 74 curves using GMP-ECM method on C308 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:26:28, current ECM pretesting depth: 20.242996
+06/08/24 20:26:28, scheduled 214 curves at B1=50000 toward target pretesting depth of 94.769231
+06/08/24 20:27:35, Finished 181 curves using GMP-ECM method on C308 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:27:35, ecm work completed:
+06/08/24 20:27:35, 	t15: 33.02
+06/08/24 20:27:35, 	t20: 9.65
+06/08/24 20:27:35, 	t25: 0.89
+06/08/24 20:27:35, 	t30: 0.06
+06/08/24 20:27:35, 	estimated sum of completed work is t24.47
+06/08/24 20:27:35, c308 cofactor = 39956803781404358098135369864092642713280275265989762560408099648854174801817291969671266610885314620283068189329281063798071914053676179195748543117844454049860178550817250587025592969405868331819410631180954525463022766294005332475668602119624742627682596888700550711388942078008949070342040939450468039491
+06/08/24 20:27:35, Total factoring time = 75.1984 seconds
+06/08/24 20:27:38, 
+06/08/24 20:27:38, ****************************
+06/08/24 20:27:38, Starting factorization of 308506862480015706253596302130016192180891287407231110154144204073473593372811566443885144932531608730843109720257088032622246287467708016494832815140139116356696253127677805857016331810434574416699259065942023145639225939217866259113949897347231066170039298184435945080218520435693878768881909866168083321599
+06/08/24 20:27:38, using pretesting plan: normal
+06/08/24 20:27:38, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:27:38, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:27:38, ****************************
+06/08/24 20:27:38, div: found prime factor = 11
+06/08/24 20:27:38, rho: x^2 + 3, starting 1000 iterations on C308
+06/08/24 20:27:38, prp5 = 58631
+06/08/24 20:27:38, rho: x^2 + 3, starting 1000 iterations on C303
+06/08/24 20:27:39, prp11 = 25164144427
+06/08/24 20:27:39, rho: x^2 + 3, starting 1000 iterations on C293
+06/08/24 20:27:39, rho: x^2 + 2, starting 1000 iterations on C293
+06/08/24 20:27:39, rho: x^2 + 1, starting 1000 iterations on C293
+06/08/24 20:27:40, pm1: starting B1 = 150K, B2 = gmp-ecm default on C293
+06/08/24 20:27:40, current ECM pretesting depth: 0.000000
+06/08/24 20:27:40, scheduled 30 curves at B1=2000 toward target pretesting depth of 90.153846
+06/08/24 20:27:40, Finished 30 curves using GMP-ECM method on C293 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:27:40, current ECM pretesting depth: 15.177725
+06/08/24 20:27:40, scheduled 74 curves at B1=11000 toward target pretesting depth of 90.153846
+06/08/24 20:27:41, prp16 = 6544478418368609 (curve 9 stg2 B1=11000 sigma=4106654057 thread=0)
+06/08/24 20:27:41, Finished 8 curves using GMP-ECM method on C293 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:27:41, current ECM pretesting depth: 15.718266
+06/08/24 20:27:41, scheduled 66 curves at B1=11000 toward target pretesting depth of 85.230769
+06/08/24 20:27:46, Finished 66 curves using GMP-ECM method on C277 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:27:46, current ECM pretesting depth: 20.242996
+06/08/24 20:27:46, scheduled 214 curves at B1=50000 toward target pretesting depth of 85.230769
+06/08/24 20:27:50, Finished 11 curves using GMP-ECM method on C277 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:27:50, ecm work completed:
+06/08/24 20:27:50, 	t15: 8.74
+06/08/24 20:27:50, 	t20: 1.56
+06/08/24 20:27:50, 	t25: 0.10
+06/08/24 20:27:50, 	estimated sum of completed work is t20.50
+06/08/24 20:27:50, c277 cofactor = 2904608696741187573122119228088719885075546298439128595623347686814253388539199142996531658545595608359474168867212079089973859371821770359317279463020992105933189849208421303359088847537945494041872131153720014943927075291830891424574353281898240186415566111712597521563286673
+06/08/24 20:27:50, Total factoring time = 11.4438 seconds
+06/08/24 20:27:53, 
+06/08/24 20:27:53, ****************************
+06/08/24 20:27:53, Starting factorization of 218025159396397436692820249996626890281519736271598807777428440318125806311017496630016552523876150803935204285586367561879483864866334794243330914052585134872169907945963545792435526238669265829681356898283684424413857138164330806683814051502258002326804885344829443999799250291551855333047297485423261947487
+06/08/24 20:27:53, using pretesting plan: normal
+06/08/24 20:27:53, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:27:53, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:27:53, ****************************
+06/08/24 20:27:53, div: found prime factor = 7
+06/08/24 20:27:53, div: found prime factor = 79
+06/08/24 20:27:53, div: found prime factor = 8539
+06/08/24 20:27:53, rho: x^2 + 3, starting 1000 iterations on C302
+06/08/24 20:27:53, rho: x^2 + 2, starting 1000 iterations on C302
+06/08/24 20:27:53, rho: x^2 + 1, starting 1000 iterations on C302
+06/08/24 20:27:54, pm1: starting B1 = 150K, B2 = gmp-ecm default on C302
+06/08/24 20:27:54, current ECM pretesting depth: 0.000000
+06/08/24 20:27:54, scheduled 30 curves at B1=2000 toward target pretesting depth of 92.923077
+06/08/24 20:27:55, Finished 30 curves using GMP-ECM method on C302 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:27:55, current ECM pretesting depth: 15.177725
+06/08/24 20:27:55, scheduled 74 curves at B1=11000 toward target pretesting depth of 92.923077
+06/08/24 20:28:01, Finished 74 curves using GMP-ECM method on C302 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:28:01, current ECM pretesting depth: 20.242996
+06/08/24 20:28:01, scheduled 214 curves at B1=50000 toward target pretesting depth of 92.923077
+06/08/24 20:28:10, prp24 = 288235721143878842867699 (curve 26 stg2 B1=50000 sigma=2239612709 thread=0)
+06/08/24 20:28:10, Finished 25 curves using GMP-ECM method on C302 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:28:10, current ECM pretesting depth: 20.827108
+06/08/24 20:28:10, scheduled 189 curves at B1=50000 toward target pretesting depth of 85.846154
+06/08/24 20:28:12, Finished 5 curves using GMP-ECM method on C279 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:28:12, ecm work completed:
+06/08/24 20:28:12, 	t15: 11.45
+06/08/24 20:28:12, 	t20: 2.46
+06/08/24 20:28:12, 	t25: 0.19
+06/08/24 20:28:12, 	t30: 0.01
+06/08/24 20:28:12, 	estimated sum of completed work is t20.94
+06/08/24 20:28:12, c279 cofactor = 160186777882188036900073325823230577807317876239510179934901129087349607541283619977602957843498019874249121603096088376575893402654051809868084104393118676482412492288721245061288652167532269045476449626690865971166913883660055885913055716336520496550098106226883468317095376039
+06/08/24 20:28:12, Total factoring time = 19.1263 seconds
+06/08/24 20:28:14, 
+06/08/24 20:28:14, ****************************
+06/08/24 20:28:14, Starting factorization of 189208236788097029686790015936136259524558174813919757512674674904266745841372535486321437814385345368872937180823655771271024327570303979994728917303684392211836802067996780516794490719744532229417103868314081036878524636082892447260760074863884398551424314258595452937401031138367896038587331607582537231775
+06/08/24 20:28:14, using pretesting plan: normal
+06/08/24 20:28:14, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:28:14, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:28:14, ****************************
+06/08/24 20:28:14, div: found prime factor = 5
+06/08/24 20:28:14, div: found prime factor = 5
+06/08/24 20:28:14, rho: x^2 + 3, starting 1000 iterations on C307
+06/08/24 20:28:15, prp13 = 1743862663141
+06/08/24 20:28:15, rho: x^2 + 3, starting 1000 iterations on C295
+06/08/24 20:28:15, rho: x^2 + 2, starting 1000 iterations on C295
+06/08/24 20:28:15, rho: x^2 + 1, starting 1000 iterations on C295
+06/08/24 20:28:16, pm1: starting B1 = 150K, B2 = gmp-ecm default on C295
+06/08/24 20:28:16, current ECM pretesting depth: 0.000000
+06/08/24 20:28:16, scheduled 30 curves at B1=2000 toward target pretesting depth of 90.769231
+06/08/24 20:28:16, Finished 30 curves using GMP-ECM method on C295 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:28:16, current ECM pretesting depth: 15.177725
+06/08/24 20:28:16, scheduled 74 curves at B1=11000 toward target pretesting depth of 90.769231
+06/08/24 20:28:20, prp18 = 201661406418625949 (curve 45 stg2 B1=11000 sigma=4269850705 thread=0)
+06/08/24 20:28:20, Finished 44 curves using GMP-ECM method on C295 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:28:20, current ECM pretesting depth: 18.150698
+06/08/24 20:28:20, scheduled 30 curves at B1=11000 toward target pretesting depth of 85.538462
+06/08/24 20:28:23, Finished 30 curves using GMP-ECM method on C278 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:28:23, current ECM pretesting depth: 20.242996
+06/08/24 20:28:23, scheduled 214 curves at B1=50000 toward target pretesting depth of 85.538462
+06/08/24 20:28:30, Finished 22 curves using GMP-ECM method on C278 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:28:30, ecm work completed:
+06/08/24 20:28:30, 	t15: 10.31
+06/08/24 20:28:30, 	t20: 2.08
+06/08/24 20:28:30, 	t25: 0.15
+06/08/24 20:28:30, 	estimated sum of completed work is t20.76
+06/08/24 20:28:30, c278 cofactor = 21521124448866993195908207617276005087418993743260766695850241743310483639119875250865660543780995518695784263003802539779829008512725594060317752049741441833711458939998617727924534834844013600699557142488915924866722525550036434564140620286645981403023335784132377487108982119
+06/08/24 20:28:30, Total factoring time = 15.6501 seconds
+06/08/24 20:28:40, 
+06/08/24 20:28:40, ****************************
+06/08/24 20:28:40, Starting factorization of 310383986157580239042505972059358194387802290191483212087633875879714818625613878958336747976700427309181793211978664213717526321047117759595159652315309818422822737414057551012741956062912337025845383419236053326855191115683442409457807007125929649755496724823759849626205464694051474679944519680541743837047
+06/08/24 20:28:40, using pretesting plan: normal
+06/08/24 20:28:40, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:28:40, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:28:40, ****************************
+06/08/24 20:28:40, div: found prime factor = 11
+06/08/24 20:28:40, div: found prime factor = 29
+06/08/24 20:28:40, rho: x^2 + 3, starting 1000 iterations on C306
+06/08/24 20:28:40, prp6 = 118429
+06/08/24 20:28:40, rho: x^2 + 3, starting 1000 iterations on C301
+06/08/24 20:28:40, prp10 = 2166290713
+06/08/24 20:28:40, rho: x^2 + 3, starting 1000 iterations on C292
+06/08/24 20:28:41, rho: x^2 + 2, starting 1000 iterations on C292
+06/08/24 20:28:41, rho: x^2 + 1, starting 1000 iterations on C292
+06/08/24 20:28:41, pm1: starting B1 = 150K, B2 = gmp-ecm default on C292
+06/08/24 20:28:42, current ECM pretesting depth: 0.000000
+06/08/24 20:28:42, scheduled 30 curves at B1=2000 toward target pretesting depth of 89.846154
+06/08/24 20:28:42, prp14 = 23568983280499 (curve 6 stg2 B1=2000 sigma=2892555060 thread=0)
+06/08/24 20:28:42, Finished 5 curves using GMP-ECM method on C292 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:28:42, current ECM pretesting depth: 0.000000
+06/08/24 20:28:42, scheduled 25 curves at B1=2000 toward target pretesting depth of 85.846154
+06/08/24 20:28:42, Finished 25 curves using GMP-ECM method on C279 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:28:42, current ECM pretesting depth: 15.177725
+06/08/24 20:28:42, scheduled 74 curves at B1=11000 toward target pretesting depth of 85.846154
+06/08/24 20:28:42, prp15 = 156758590644749 (curve 2 stg2 B1=11000 sigma=664350539 thread=0)
+06/08/24 20:28:42, Finished 1 curves using GMP-ECM method on C279 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:28:42, current ECM pretesting depth: 15.245293
+06/08/24 20:28:42, scheduled 73 curves at B1=11000 toward target pretesting depth of 81.538462
+06/08/24 20:28:48, Finished 73 curves using GMP-ECM method on C265 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:28:48, current ECM pretesting depth: 20.242996
+06/08/24 20:28:48, scheduled 214 curves at B1=50000 toward target pretesting depth of 81.538462
+06/08/24 20:28:53, Finished 17 curves using GMP-ECM method on C265 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:28:53, ecm work completed:
+06/08/24 20:28:53, 	t15: 9.60
+06/08/24 20:28:53, 	t20: 1.85
+06/08/24 20:28:53, 	t25: 0.13
+06/08/24 20:28:53, 	estimated sum of completed work is t20.64
+06/08/24 20:28:53, c265 cofactor = 1026506313087154109740070717133679945693607357637979214123551044179467586851020181582277448307107094533123061839950293983701648706487146686965280245547500019513994099438097498852279120772872823579294084104624496228398961352921817709792468979297160634356685407323619
+06/08/24 20:28:53, Total factoring time = 12.6744 seconds
+06/08/24 20:29:08, 
+06/08/24 20:29:08, ****************************
+06/08/24 20:29:08, Starting factorization of 301977065810547762986266457692084103874837685982993798359501433006192279495905896926570740880966488033878267580121039599073618406462659355509938465365648440756511015039762110335499467832091366885954384114356739391486827446861904422318957512761520667461494475888047459959508138265553072870013649066390800631127
+06/08/24 20:29:08, using pretesting plan: normal
+06/08/24 20:29:08, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:29:08, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:29:08, ****************************
+06/08/24 20:29:08, div: found prime factor = 47
+06/08/24 20:29:08, div: found prime factor = 1303
+06/08/24 20:29:08, rho: x^2 + 3, starting 1000 iterations on C304
+06/08/24 20:29:08, rho: x^2 + 2, starting 1000 iterations on C304
+06/08/24 20:29:09, rho: x^2 + 1, starting 1000 iterations on C304
+06/08/24 20:29:09, pm1: starting B1 = 150K, B2 = gmp-ecm default on C304
+06/08/24 20:29:09, current ECM pretesting depth: 0.000000
+06/08/24 20:29:09, scheduled 30 curves at B1=2000 toward target pretesting depth of 93.538462
+06/08/24 20:29:10, Finished 30 curves using GMP-ECM method on C304 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:29:10, current ECM pretesting depth: 15.177725
+06/08/24 20:29:10, scheduled 74 curves at B1=11000 toward target pretesting depth of 93.538462
+06/08/24 20:29:16, Finished 74 curves using GMP-ECM method on C304 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:29:16, current ECM pretesting depth: 20.242996
+06/08/24 20:29:16, scheduled 214 curves at B1=50000 toward target pretesting depth of 93.538462
+06/08/24 20:29:18, prp20 = 51391357594427272237 (curve 6 stg2 B1=50000 sigma=2386534565 thread=0)
+06/08/24 20:29:18, Finished 5 curves using GMP-ECM method on C304 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:29:18, current ECM pretesting depth: 20.359819
+06/08/24 20:29:18, scheduled 209 curves at B1=50000 toward target pretesting depth of 87.384615
+06/08/24 20:29:23, Finished 13 curves using GMP-ECM method on C284 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:29:23, ecm work completed:
+06/08/24 20:29:23, 	t15: 9.74
+06/08/24 20:29:23, 	t20: 1.89
+06/08/24 20:29:23, 	t25: 0.13
+06/08/24 20:29:23, 	estimated sum of completed work is t20.66
+06/08/24 20:29:23, c284 cofactor = 95949252744737315987723735507433524254015150501465325277536533339849907554508564851730861747654572920169139337085377865232072866822593650144888235562813017379218024575537837729598830127011389863194411555525200356606547448312809125290633128956908133844670131889216508700109039415919531
+06/08/24 20:29:23, Total factoring time = 14.4464 seconds
+06/08/24 20:29:24, 
+06/08/24 20:29:24, ****************************
+06/08/24 20:29:24, Starting factorization of 324488946870131161240819759245901928103065398761726722355757907498947718165536730752124874156415256800711560704651880895270725716924707348306027569155505300225509622624654141303346111610302857221062774637347749767950574794120185768060112622534014532927475278602948748558529061188274121975599250822357150944847
+06/08/24 20:29:24, using pretesting plan: normal
+06/08/24 20:29:24, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:29:24, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:29:24, ****************************
+06/08/24 20:29:24, div: found prime factor = 17
+06/08/24 20:29:24, rho: x^2 + 3, starting 1000 iterations on C308
+06/08/24 20:29:24, prp6 = 211297
+06/08/24 20:29:24, rho: x^2 + 3, starting 1000 iterations on C302
+06/08/24 20:29:25, rho: x^2 + 2, starting 1000 iterations on C302
+06/08/24 20:29:25, rho: x^2 + 1, starting 1000 iterations on C302
+06/08/24 20:29:26, pm1: starting B1 = 150K, B2 = gmp-ecm default on C302
+06/08/24 20:29:26, current ECM pretesting depth: 0.000000
+06/08/24 20:29:26, scheduled 30 curves at B1=2000 toward target pretesting depth of 92.923077
+06/08/24 20:29:26, prp13 = 3439784389351 (curve 21 stg2 B1=2000 sigma=617367539 thread=0)
+06/08/24 20:29:26, Finished 20 curves using GMP-ECM method on C302 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:29:26, current ECM pretesting depth: 0.000000
+06/08/24 20:29:26, scheduled 10 curves at B1=2000 toward target pretesting depth of 89.230769
+06/08/24 20:29:26, Finished 10 curves using GMP-ECM method on C290 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:29:26, current ECM pretesting depth: 15.177725
+06/08/24 20:29:26, scheduled 74 curves at B1=11000 toward target pretesting depth of 89.230769
+06/08/24 20:29:33, Finished 74 curves using GMP-ECM method on C290 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:29:33, current ECM pretesting depth: 20.242996
+06/08/24 20:29:33, scheduled 214 curves at B1=50000 toward target pretesting depth of 89.230769
+06/08/24 20:29:57, Finished 64 curves using GMP-ECM method on C290 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:29:57, ecm work completed:
+06/08/24 20:29:57, 	t15: 16.31
+06/08/24 20:29:57, 	t20: 4.08
+06/08/24 20:29:57, 	t25: 0.35
+06/08/24 20:29:57, 	t30: 0.02
+06/08/24 20:29:57, 	estimated sum of completed work is t21.74
+06/08/24 20:29:57, c290 cofactor = 26261917600863283575082631121998703954873458891567999841103315879597083898859473264479211546404248645208672932808676545236022850567672934490428912543890023615799835581900138256727478163905525250440276188392406418795748078289696859501164914043276891215476275322163054148602085683901016315753
+06/08/24 20:29:57, Total factoring time = 32.2010 seconds
+06/08/24 20:30:05, 
+06/08/24 20:30:05, ****************************
+06/08/24 20:30:05, Starting factorization of 228149081984925369150568480526215526519260704100928092263513041501993482506100014402820536597501743646407966738980345527393067224134977976021100188829594182726373748586169118602831753794948171907365441737386408369348220604167787342580610705512643675489968322155152266653439688704542093261493658719591909437815
+06/08/24 20:30:05, using pretesting plan: normal
+06/08/24 20:30:05, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:30:05, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:30:05, ****************************
+06/08/24 20:30:05, div: found prime factor = 5
+06/08/24 20:30:05, rho: x^2 + 3, starting 1000 iterations on C308
+06/08/24 20:30:06, rho: x^2 + 2, starting 1000 iterations on C308
+06/08/24 20:30:06, prp11 = 88244842289
+06/08/24 20:30:06, rho: x^2 + 2, starting 1000 iterations on C297
+06/08/24 20:30:06, rho: x^2 + 1, starting 1000 iterations on C297
+06/08/24 20:30:07, pm1: starting B1 = 150K, B2 = gmp-ecm default on C297
+06/08/24 20:30:07, current ECM pretesting depth: 0.000000
+06/08/24 20:30:07, scheduled 30 curves at B1=2000 toward target pretesting depth of 91.384615
+06/08/24 20:30:07, prp14 = 20864495596361 (curve 2 stg2 B1=2000 sigma=888396953 thread=0)
+06/08/24 20:30:07, Finished 1 curves using GMP-ECM method on C297 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:30:07, current ECM pretesting depth: 0.000000
+06/08/24 20:30:07, scheduled 29 curves at B1=2000 toward target pretesting depth of 87.384615
+06/08/24 20:30:07, Finished 29 curves using GMP-ECM method on C284 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:30:07, current ECM pretesting depth: 15.177725
+06/08/24 20:30:07, scheduled 74 curves at B1=11000 toward target pretesting depth of 87.384615
+06/08/24 20:30:13, Finished 74 curves using GMP-ECM method on C284 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:30:13, current ECM pretesting depth: 20.242996
+06/08/24 20:30:13, scheduled 214 curves at B1=50000 toward target pretesting depth of 87.384615
+06/08/24 20:30:18, Finished 14 curves using GMP-ECM method on C284 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:30:18, ecm work completed:
+06/08/24 20:30:18, 	t15: 9.17
+06/08/24 20:30:18, 	t20: 1.70
+06/08/24 20:30:18, 	t25: 0.11
+06/08/24 20:30:18, 	estimated sum of completed work is t20.57
+06/08/24 20:30:18, c284 cofactor = 24782864363505432587111895430374137568076316451185866990968489490973911762736300633913449990066344117599827086254249269575291629441224860378135145107026873347392242555875957972576298558985195045282982322905874060508728200569519441976489762512546343607205500782165084375861204253614947
+06/08/24 20:30:18, Total factoring time = 12.5183 seconds
+06/08/24 20:30:28, 
+06/08/24 20:30:28, ****************************
+06/08/24 20:30:28, Starting factorization of 233390686257435412775268741978902145459263294128814869332373963291510072645657856585675287376270978188639173637782341216680575806852692129560363317519707700540968593089004097135160825972041690471183266162387201333749690588642235600129310819366001935695942132419420521891061230000110803519396693312297098870967
+06/08/24 20:30:28, using pretesting plan: normal
+06/08/24 20:30:28, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:30:28, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:30:28, ****************************
+06/08/24 20:30:28, rho: x^2 + 3, starting 1000 iterations on C309
+06/08/24 20:30:28, rho: x^2 + 2, starting 1000 iterations on C309
+06/08/24 20:30:29, rho: x^2 + 1, starting 1000 iterations on C309
+06/08/24 20:30:29, pm1: starting B1 = 150K, B2 = gmp-ecm default on C309
+06/08/24 20:30:29, c26 = 40771845945412226895772573
+06/08/24 20:30:29, current ECM pretesting depth: 0.000000
+06/08/24 20:30:29, scheduled 30 curves at B1=2000 toward target pretesting depth of 87.076923
+06/08/24 20:30:30, Finished 30 curves using GMP-ECM method on C283 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:30:30, current ECM pretesting depth: 15.177725
+06/08/24 20:30:30, scheduled 74 curves at B1=11000 toward target pretesting depth of 87.076923
+06/08/24 20:30:36, Finished 74 curves using GMP-ECM method on C283 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:30:36, current ECM pretesting depth: 20.242996
+06/08/24 20:30:36, scheduled 214 curves at B1=50000 toward target pretesting depth of 87.076923
+06/08/24 20:30:52, Finished 49 curves using GMP-ECM method on C283 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:30:52, ecm work completed:
+06/08/24 20:30:52, 	t15: 14.17
+06/08/24 20:30:52, 	t20: 3.37
+06/08/24 20:30:52, 	t25: 0.28
+06/08/24 20:30:52, 	t30: 0.02
+06/08/24 20:30:52, 	estimated sum of completed work is t21.39
+06/08/24 20:30:52, c283 cofactor = 5724310019465705558098065094929183232484527142137885503470720290458654956536962416409551676257471471417351701792996205446644645218928148333139135680443995965222593282336611169290913297278425082355916869963519571431941757486712424096005222302087765905823146267972717670306710295514979
+06/08/24 20:30:52, Total factoring time = 24.2814 seconds
+06/08/24 20:31:00, 
+06/08/24 20:31:00, ****************************
+06/08/24 20:31:00, Starting factorization of 341602154184985147141034331551142826040467353630221693561757921990484089548612393018813735544436699188513982372443048504504069062708015524845158282783045654587646691425210935209148392108813106302299904411405542869290046848014438707839816347884920286626928395025198926526726963934566441364797974543591065689679
+06/08/24 20:31:00, using pretesting plan: normal
+06/08/24 20:31:00, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:31:00, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:31:00, ****************************
+06/08/24 20:31:00, div: found prime factor = 163
+06/08/24 20:31:00, rho: x^2 + 3, starting 1000 iterations on C307
+06/08/24 20:31:00, prp5 = 21929
+06/08/24 20:31:00, rho: x^2 + 3, starting 1000 iterations on C302
+06/08/24 20:31:00, rho: x^2 + 2, starting 1000 iterations on C302
+06/08/24 20:31:00, rho: x^2 + 1, starting 1000 iterations on C302
+06/08/24 20:31:01, pm1: starting B1 = 150K, B2 = gmp-ecm default on C302
+06/08/24 20:31:01, prp14 = 27754595086177
+06/08/24 20:31:01, current ECM pretesting depth: 0.000000
+06/08/24 20:31:01, scheduled 30 curves at B1=2000 toward target pretesting depth of 88.923077
+06/08/24 20:31:03, prp289 = 3443334968360926541015084155971133299714495127884970323545733732988982215020175940426581412825373049245001549018432084217463812957329615044141979466138383056916564401987041931237195474228725253739636032562152538479975208865330318310636230572890913721443916781262765066384161876844322187901
+06/08/24 20:31:03, Total factoring time = 2.9523 seconds
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 170801077092492573570517165775571413020233676815110846780878960995242044774306196509406867772218349594256991186221524252252034531354007762422579141391522827293823345712605467604574196054406553151149952205702771434645023424007219353919908173942460143313464197512599463263363481967283220682398987271795532844838
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, div: found prime factor = 2
+06/08/24 20:32:17, div: found prime factor = 9473
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C304
+06/08/24 20:32:17, c10 = 1647064421
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C295
+06/08/24 20:32:17, prp5 = 60527
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C290
+06/08/24 20:32:17, c65 = 39683904658911863523067335341943554356133764302147896601942931669
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C226
+06/08/24 20:32:17, c10 = 1203544271
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C217
+06/08/24 20:32:17, c137 = 17216763944008436962035926987772679955405238013982039205535210939480270328799156282781341631722690224385439507124002712916980916438172733
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C81
+06/08/24 20:32:17, c76 = 2156287440726864564696094997378281167498919274110377380039937964539904261327
+06/08/24 20:32:17, prp5 = 51001
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 1647064421
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Fermat method found factors:
+06/08/24 20:32:17, prp5 = 48533
+06/08/24 20:32:17, prp5 = 33937
+06/08/24 20:32:17, Total factoring time = 0.0036 seconds
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 39683904658911863523067335341943554356133764302147896601942931669
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C65
+06/08/24 20:32:17, prp5 = 58391
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C60
+06/08/24 20:32:17, prp5 = 36563
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C56
+06/08/24 20:32:17, prp5 = 51713
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C51
+06/08/24 20:32:17, prp5 = 10837
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C47
+06/08/24 20:32:17, prp5 = 36571
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C42
+06/08/24 20:32:17, prp5 = 44917
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C38
+06/08/24 20:32:17, c10 = 1269798353
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C29
+06/08/24 20:32:17, prp5 = 55603
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C24
+06/08/24 20:32:17, prp5 = 32917
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C19
+06/08/24 20:32:17, prp5 = 61409
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C15
+06/08/24 20:32:17, prp5 = 54833
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C10
+06/08/24 20:32:17, prp5 = 49463
+06/08/24 20:32:17, prp5 = 52163
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 1269798353
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Fermat method found factors:
+06/08/24 20:32:17, prp5 = 37813
+06/08/24 20:32:17, prp5 = 33581
+06/08/24 20:32:17, Total factoring time = 0.0035 seconds
+06/08/24 20:32:17, Total factoring time = 0.0256 seconds
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 17216763944008436962035926987772679955405238013982039205535210939480270328799156282781341631722690224385439507124002712916980916438172733
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C137
+06/08/24 20:32:17, prp5 = 62189
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C132
+06/08/24 20:32:17, prp5 = 54907
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C127
+06/08/24 20:32:17, prp5 = 49783
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C123
+06/08/24 20:32:17, prp5 = 47459
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C118
+06/08/24 20:32:17, prp5 = 36187
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C113
+06/08/24 20:32:17, prp5 = 60427
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C108
+06/08/24 20:32:17, prp5 = 55667
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C104
+06/08/24 20:32:17, prp5 = 36307
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C99
+06/08/24 20:32:17, prp5 = 36299
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C95
+06/08/24 20:32:17, c10 = 3360068561
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C85
+06/08/24 20:32:17, prp5 = 37397
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C81
+06/08/24 20:32:17, prp5 = 34301
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C76
+06/08/24 20:32:17, prp5 = 53717
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C71
+06/08/24 20:32:17, prp5 = 52249
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C67
+06/08/24 20:32:17, prp5 = 34877
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C62
+06/08/24 20:32:17, prp5 = 60869
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C57
+06/08/24 20:32:17, prp5 = 63277
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C52
+06/08/24 20:32:17, c10 = 2968363681
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C43
+06/08/24 20:32:17, prp5 = 55127
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C38
+06/08/24 20:32:17, prp5 = 52769
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C33
+06/08/24 20:32:17, prp5 = 44729
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C29
+06/08/24 20:32:17, prp5 = 62987
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C24
+06/08/24 20:32:17, prp5 = 64091
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C19
+06/08/24 20:32:17, c14 = 94326353895383
+06/08/24 20:32:17, prp5 = 55661
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 3360068561
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Fermat method found factors:
+06/08/24 20:32:17, prp5 = 58549
+06/08/24 20:32:17, prp5 = 57389
+06/08/24 20:32:17, Total factoring time = 0.0036 seconds
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 2968363681
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Fermat method found factors:
+06/08/24 20:32:17, prp5 = 56923
+06/08/24 20:32:17, prp5 = 52147
+06/08/24 20:32:17, Total factoring time = 0.0035 seconds
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 94326353895383
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C14
+06/08/24 20:32:17, rho: x^2 + 2, starting 1000 iterations on C14
+06/08/24 20:32:17, prp5 = 50131
+06/08/24 20:32:17, rho: x^2 + 2, starting 1000 iterations on C10
+06/08/24 20:32:17, prp5 = 54361
+06/08/24 20:32:17, prp5 = 34613
+06/08/24 20:32:17, Total factoring time = 0.0040 seconds
+06/08/24 20:32:17, Total factoring time = 0.0709 seconds
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 1203544271
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Fermat method found factors:
+06/08/24 20:32:17, prp5 = 36563
+06/08/24 20:32:17, prp5 = 32917
+06/08/24 20:32:17, Total factoring time = 0.0039 seconds
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 2156287440726864564696094997378281167498919274110377380039937964539904261327
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C76
+06/08/24 20:32:17, prp5 = 51949
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C71
+06/08/24 20:32:17, prp5 = 61627
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C66
+06/08/24 20:32:17, prp5 = 56597
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C62
+06/08/24 20:32:17, c10 = 1993018787
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C52
+06/08/24 20:32:17, prp5 = 52489
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C48
+06/08/24 20:32:17, prp5 = 53731
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C43
+06/08/24 20:32:17, prp5 = 41659
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C38
+06/08/24 20:32:17, prp5 = 52883
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C33
+06/08/24 20:32:17, prp5 = 60631
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C29
+06/08/24 20:32:17, prp5 = 52919
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C24
+06/08/24 20:32:17, c10 = 2144782933
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C15
+06/08/24 20:32:17, prp5 = 62297
+06/08/24 20:32:17, rho: x^2 + 3, starting 1000 iterations on C10
+06/08/24 20:32:17, prp5 = 42901
+06/08/24 20:32:17, prp5 = 52253
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 1993018787
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Fermat method found factors:
+06/08/24 20:32:17, prp5 = 48079
+06/08/24 20:32:17, prp5 = 41453
+06/08/24 20:32:17, Total factoring time = 0.0037 seconds
+06/08/24 20:32:17, 
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Starting factorization of 2144782933
+06/08/24 20:32:17, using pretesting plan: normal
+06/08/24 20:32:17, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:32:17, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:32:17, ****************************
+06/08/24 20:32:17, Fermat method found factors:
+06/08/24 20:32:17, prp5 = 63281
+06/08/24 20:32:17, prp5 = 33893
+06/08/24 20:32:17, Total factoring time = 0.0039 seconds
+06/08/24 20:32:17, Total factoring time = 0.0477 seconds
+06/08/24 20:32:17, Total factoring time = 0.2837 seconds
+06/08/24 20:33:58, 
+06/08/24 20:33:58, ****************************
+06/08/24 20:33:58, Starting factorization of 304679790280697277716878442231322233860997933159419547407452563654054583854104699136568752064737898533575942266740307601684721338371660098192951637825209109315711153454695566491853022481884371056646785792445436307331927528908494610033990997016261545767337958736414599466788081285317139988594901042732391717887
+06/08/24 20:33:58, using pretesting plan: normal
+06/08/24 20:33:58, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:33:58, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:33:58, ****************************
+06/08/24 20:33:58, rho: x^2 + 3, starting 1000 iterations on C309
+06/08/24 20:33:58, prp8 = 12729947
+06/08/24 20:33:58, rho: x^2 + 3, starting 1000 iterations on C302
+06/08/24 20:33:58, rho: x^2 + 2, starting 1000 iterations on C302
+06/08/24 20:33:59, rho: x^2 + 1, starting 1000 iterations on C302
+06/08/24 20:33:59, pm1: starting B1 = 150K, B2 = gmp-ecm default on C302
+06/08/24 20:33:59, current ECM pretesting depth: 0.000000
+06/08/24 20:33:59, scheduled 30 curves at B1=2000 toward target pretesting depth of 92.923077
+06/08/24 20:34:00, Finished 30 curves using GMP-ECM method on C302 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:34:00, current ECM pretesting depth: 15.177725
+06/08/24 20:34:00, scheduled 74 curves at B1=11000 toward target pretesting depth of 92.923077
+06/08/24 20:34:06, Finished 74 curves using GMP-ECM method on C302 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:34:06, current ECM pretesting depth: 20.242996
+06/08/24 20:34:06, scheduled 214 curves at B1=50000 toward target pretesting depth of 92.923077
+06/08/24 20:34:21, Finished 39 curves using GMP-ECM method on C302 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:34:21, ecm work completed:
+06/08/24 20:34:21, 	t15: 12.74
+06/08/24 20:34:21, 	t20: 2.89
+06/08/24 20:34:21, 	t25: 0.23
+06/08/24 20:34:21, 	t30: 0.01
+06/08/24 20:34:21, 	estimated sum of completed work is t21.15
+06/08/24 20:34:21, c302 cofactor = 23934097312478777619174568616139739926725377030982104435112932021952218956929255018624095769191961171054046200407614234504253736356613275624238784169738421480915132910977207249319500111185409574497583202227427679575722312819408801154788075474018984192733713560348255924929466028830845877723992177087021
+06/08/24 20:34:21, Total factoring time = 22.8227 seconds
+06/08/24 20:34:26, 
+06/08/24 20:34:26, ****************************
+06/08/24 20:34:26, Starting factorization of 220189484900440951590423294438891863128016794151072435980880088442067137751746460229577826454148827995571111410353842613178863860747233165663508292674240342612811643533265060490480761288849748365220001854790734561549979391023990145394486146792076750843541132366858756879730773216693224347956784891684409162935
+06/08/24 20:34:26, using pretesting plan: normal
+06/08/24 20:34:26, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:34:26, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:34:26, ****************************
+06/08/24 20:34:26, div: found prime factor = 5
+06/08/24 20:34:26, div: found prime factor = 23
+06/08/24 20:34:26, rho: x^2 + 3, starting 1000 iterations on C307
+06/08/24 20:34:26, rho: x^2 + 2, starting 1000 iterations on C307
+06/08/24 20:34:27, prp11 = 88810855291
+06/08/24 20:34:27, rho: x^2 + 2, starting 1000 iterations on C296
+06/08/24 20:34:27, rho: x^2 + 1, starting 1000 iterations on C296
+06/08/24 20:34:27, pm1: starting B1 = 150K, B2 = gmp-ecm default on C296
+06/08/24 20:34:27, current ECM pretesting depth: 0.000000
+06/08/24 20:34:27, scheduled 30 curves at B1=2000 toward target pretesting depth of 91.076923
+06/08/24 20:34:28, prp12 = 721273071157 (curve 4 stg2 B1=2000 sigma=1216248836 thread=0)
+06/08/24 20:34:28, Finished 3 curves using GMP-ECM method on C296 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:34:28, current ECM pretesting depth: 0.000000
+06/08/24 20:34:28, scheduled 27 curves at B1=2000 toward target pretesting depth of 87.384615
+06/08/24 20:34:28, prp13 = 1852190328223 (curve 2 stg1 B1=2000 sigma=2892555060 thread=0)
+06/08/24 20:34:28, Finished 1 curves using GMP-ECM method on C284 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:34:28, current ECM pretesting depth: 0.000000
+06/08/24 20:34:28, scheduled 26 curves at B1=2000 toward target pretesting depth of 83.692308
+06/08/24 20:34:28, prp15 = 469273542351403 (curve 14 stg2 B1=2000 sigma=3557067307 thread=0)
+06/08/24 20:34:28, Finished 13 curves using GMP-ECM method on C272 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:34:28, current ECM pretesting depth: 0.000000
+06/08/24 20:34:28, scheduled 13 curves at B1=2000 toward target pretesting depth of 79.076923
+06/08/24 20:34:28, Finished 13 curves using GMP-ECM method on C257 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:34:28, current ECM pretesting depth: 15.177725
+06/08/24 20:34:28, scheduled 74 curves at B1=11000 toward target pretesting depth of 79.076923
+06/08/24 20:34:28, prp16 = 1923170385563873 (curve 4 stg2 B1=11000 sigma=3610622540 thread=0)
+06/08/24 20:34:28, Finished 3 curves using GMP-ECM method on C257 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:34:28, current ECM pretesting depth: 15.380428
+06/08/24 20:34:28, scheduled 71 curves at B1=11000 toward target pretesting depth of 74.461538
+06/08/24 20:34:33, Finished 71 curves using GMP-ECM method on C242 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:34:33, current ECM pretesting depth: 20.242996
+06/08/24 20:34:33, scheduled 214 curves at B1=50000 toward target pretesting depth of 74.461538
+06/08/24 20:34:36, Finished 11 curves using GMP-ECM method on C242 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:34:36, ecm work completed:
+06/08/24 20:34:36, 	t15: 8.74
+06/08/24 20:34:36, 	t20: 1.56
+06/08/24 20:34:36, 	t25: 0.10
+06/08/24 20:34:36, 	estimated sum of completed work is t20.50
+06/08/24 20:34:36, c242 cofactor = 17881482431240232902795829753029541988546528240316204669508746152907215067403250079935691652717934151821179836918001755461781258298435234138920863885450274176155753688013796883199636693075733926682344867592791086868326842709794262248813209551
+06/08/24 20:34:36, Total factoring time = 10.0137 seconds
+06/08/24 20:35:20, 
+06/08/24 20:35:20, ****************************
+06/08/24 20:35:20, Starting factorization of 194704081032741667970331971380756918594083865156542850871947863865267785863755092339386064776381078077583454755410860550073069043330063783537592982192695880239492172414715954813374334980842798346967412290623543500773890408995166808806846402128713511274145379057455855055409322955783828193953036094055717558239
+06/08/24 20:35:20, using pretesting plan: normal
+06/08/24 20:35:20, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:35:20, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:35:20, ****************************
+06/08/24 20:35:20, rho: x^2 + 3, starting 1000 iterations on C309
+06/08/24 20:35:21, prp8 = 10645277
+06/08/24 20:35:21, rho: x^2 + 3, starting 1000 iterations on C302
+06/08/24 20:35:21, rho: x^2 + 2, starting 1000 iterations on C302
+06/08/24 20:35:21, rho: x^2 + 1, starting 1000 iterations on C302
+06/08/24 20:35:22, pm1: starting B1 = 150K, B2 = gmp-ecm default on C302
+06/08/24 20:35:22, current ECM pretesting depth: 0.000000
+06/08/24 20:35:22, scheduled 30 curves at B1=2000 toward target pretesting depth of 92.923077
+06/08/24 20:35:22, Finished 30 curves using GMP-ECM method on C302 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:35:22, current ECM pretesting depth: 15.177725
+06/08/24 20:35:22, scheduled 74 curves at B1=11000 toward target pretesting depth of 92.923077
+06/08/24 20:35:25, Finished 34 curves using GMP-ECM method on C302 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:35:25, ecm work completed:
+06/08/24 20:35:25, 	t15: 3.83
+06/08/24 20:35:25, 	t20: 0.50
+06/08/24 20:35:25, 	t25: 0.02
+06/08/24 20:35:25, 	estimated sum of completed work is t17.48
+06/08/24 20:35:25, c302 cofactor = 18290184560978701443873369512203103648132769598812961924048370358541894763636032424462610486921202527429155178903363486931628838153301579990599867170454642020070701064398413945769033063286450728052206841646632915308252702958801993485641228699705372746443834111358103227883062409346776809467056244196907
+06/08/24 20:35:25, Total factoring time = 4.8486 seconds
+06/08/24 20:35:31, 
+06/08/24 20:35:31, ****************************
+06/08/24 20:35:31, Starting factorization of 187626581161306826990627423361505830455705810781827070425062427315952012600129621407694875909073847587958064122357232569671737055326083351542132370445216046639123387316668817040783984869364586702078368866458181979014818605173852758097917640652944590155981917559353382626566182890026827168043341058164218292015
+06/08/24 20:35:31, using pretesting plan: normal
+06/08/24 20:35:31, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:35:31, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:35:31, ****************************
+06/08/24 20:35:31, div: found prime factor = 5
+06/08/24 20:35:31, rho: x^2 + 3, starting 1000 iterations on C308
+06/08/24 20:35:31, prp6 = 123289
+06/08/24 20:35:31, rho: x^2 + 3, starting 1000 iterations on C303
+06/08/24 20:35:31, prp5 = 46183
+06/08/24 20:35:31, rho: x^2 + 3, starting 1000 iterations on C298
+06/08/24 20:35:31, rho: x^2 + 2, starting 1000 iterations on C298
+06/08/24 20:35:31, rho: x^2 + 1, starting 1000 iterations on C298
+06/08/24 20:35:32, pm1: starting B1 = 150K, B2 = gmp-ecm default on C298
+06/08/24 20:35:32, current ECM pretesting depth: 0.000000
+06/08/24 20:35:32, scheduled 30 curves at B1=2000 toward target pretesting depth of 91.692308
+06/08/24 20:35:32, Finished 30 curves using GMP-ECM method on C298 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:35:32, current ECM pretesting depth: 15.177725
+06/08/24 20:35:32, scheduled 74 curves at B1=11000 toward target pretesting depth of 91.692308
+06/08/24 20:35:37, Finished 50 curves using GMP-ECM method on C298 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:35:37, ecm work completed:
+06/08/24 20:35:37, 	t15: 5.17
+06/08/24 20:35:37, 	t20: 0.71
+06/08/24 20:35:37, 	t25: 0.03
+06/08/24 20:35:37, 	estimated sum of completed work is t18.56
+06/08/24 20:35:37, c298 cofactor = 6590492800834276787540598438806459045727716739516665973005945428346315032055521408306232950116598115717573451200249268608569441136825996085915069119669696573025448872470516640625470219926716129128414270540464839095946672848197176652494283287537115361345706555265099305333583792898930712541349610669
+06/08/24 20:35:37, Total factoring time = 6.3434 seconds
+06/08/24 20:35:39, 
+06/08/24 20:35:39, ****************************
+06/08/24 20:35:39, Starting factorization of 244949254658601423023555203640098944746937275264013764779593202444024355366080095033278301013061173478065867095545977399148693109491416139195827805605343140073956181023481003453530555328430766207976044069348370728325875456788900637756590079234378483943647617427151151130047827321754008011535424841466994256295
+06/08/24 20:35:39, using pretesting plan: normal
+06/08/24 20:35:39, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:35:39, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:35:39, ****************************
+06/08/24 20:35:39, div: found prime factor = 5
+06/08/24 20:35:39, div: found prime factor = 239
+06/08/24 20:35:39, rho: x^2 + 3, starting 1000 iterations on C306
+06/08/24 20:35:39, rho: x^2 + 2, starting 1000 iterations on C306
+06/08/24 20:35:39, rho: x^2 + 1, starting 1000 iterations on C306
+06/08/24 20:35:40, prp12 = 310583576143
+06/08/24 20:35:40, rho: x^2 + 1, starting 1000 iterations on C294
+06/08/24 20:35:40, pm1: starting B1 = 150K, B2 = gmp-ecm default on C294
+06/08/24 20:35:40, current ECM pretesting depth: 0.000000
+06/08/24 20:35:40, scheduled 30 curves at B1=2000 toward target pretesting depth of 90.461538
+06/08/24 20:35:41, prp18 = 111359365049084627 (curve 24 stg2 B1=2000 sigma=2894039543 thread=0)
+06/08/24 20:35:41, Finished 23 curves using GMP-ECM method on C294 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:35:41, current ECM pretesting depth: 0.000000
+06/08/24 20:35:41, scheduled 7 curves at B1=2000 toward target pretesting depth of 85.230769
+06/08/24 20:35:41, Finished 7 curves using GMP-ECM method on C277 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:35:41, current ECM pretesting depth: 15.177725
+06/08/24 20:35:41, scheduled 74 curves at B1=11000 toward target pretesting depth of 85.230769
+06/08/24 20:35:47, Finished 74 curves using GMP-ECM method on C277 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:35:47, current ECM pretesting depth: 20.242996
+06/08/24 20:35:47, scheduled 214 curves at B1=50000 toward target pretesting depth of 85.230769
+06/08/24 20:35:55, prp24 = 146791483020046226724707 (curve 27 stg2 B1=50000 sigma=1559222642 thread=0)
+06/08/24 20:35:55, Finished 26 curves using GMP-ECM method on C277 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:35:55, current ECM pretesting depth: 20.850473
+06/08/24 20:35:55, scheduled 188 curves at B1=50000 toward target pretesting depth of 78.153846
+06/08/24 20:35:56, Finished 3 curves using GMP-ECM method on C254 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:35:56, ecm work completed:
+06/08/24 20:35:56, 	t15: 11.31
+06/08/24 20:35:56, 	t20: 2.42
+06/08/24 20:35:56, 	t25: 0.18
+06/08/24 20:35:56, 	t30: 0.01
+06/08/24 20:35:56, 	estimated sum of completed work is t20.92
+06/08/24 20:35:56, c254 cofactor = 40374032348169363296063929250219032653772014561025248797591969977119914286016348227341959462655136388377949539502677716660068644808383674806621195291054916832594229245463854241702475407450787766193281193613624732906519644831654387757582557895147373047603
+06/08/24 20:35:56, Total factoring time = 17.4108 seconds
+06/08/24 20:36:02, 
+06/08/24 20:36:02, ****************************
+06/08/24 20:36:02, Starting factorization of 197274312767048445517979113543885376770479211959907060855113157990468865257159529480001132539974282408028646263806862802446837337089409109201173901856899021883973218040156548547746148876437705426924118502415415533101079992490612562259855391358866278836996194026287869710433578923579849477348892444011509679575
+06/08/24 20:36:02, using pretesting plan: normal
+06/08/24 20:36:02, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:36:02, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:36:02, ****************************
+06/08/24 20:36:02, div: found prime factor = 5
+06/08/24 20:36:02, div: found prime factor = 5
+06/08/24 20:36:02, div: found prime factor = 13
+06/08/24 20:36:02, rho: x^2 + 3, starting 1000 iterations on C306
+06/08/24 20:36:02, prp5 = 32797
+06/08/24 20:36:02, rho: x^2 + 3, starting 1000 iterations on C302
+06/08/24 20:36:02, rho: x^2 + 2, starting 1000 iterations on C302
+06/08/24 20:36:03, rho: x^2 + 1, starting 1000 iterations on C302
+06/08/24 20:36:03, pm1: starting B1 = 150K, B2 = gmp-ecm default on C302
+06/08/24 20:36:03, current ECM pretesting depth: 0.000000
+06/08/24 20:36:03, scheduled 30 curves at B1=2000 toward target pretesting depth of 92.923077
+06/08/24 20:36:04, Finished 30 curves using GMP-ECM method on C302 input, B1=2k, B2=gmp-ecm default
+06/08/24 20:36:04, current ECM pretesting depth: 15.177725
+06/08/24 20:36:04, scheduled 74 curves at B1=11000 toward target pretesting depth of 92.923077
+06/08/24 20:36:10, Finished 74 curves using GMP-ECM method on C302 input, B1=11k, B2=gmp-ecm default
+06/08/24 20:36:10, current ECM pretesting depth: 20.242996
+06/08/24 20:36:10, scheduled 214 curves at B1=50000 toward target pretesting depth of 92.923077
+06/08/24 20:36:13, Finished 6 curves using GMP-ECM method on C302 input, B1=50k, B2=gmp-ecm default
+06/08/24 20:36:13, ecm work completed:
+06/08/24 20:36:13, 	t15: 8.02
+06/08/24 20:36:13, 	t20: 1.32
+06/08/24 20:36:13, 	t25: 0.08
+06/08/24 20:36:13, 	estimated sum of completed work is t20.38
+06/08/24 20:36:13, c302 cofactor = 18507725872399065160085384314595882528700252786714268974424317232623890576967361412512038628296141758559403534920582586347891794708184764479037613839624076487668733119601140681042229366798342759016337657751568791057444746821647623704781196343836915556253615506698583567487043038512420177018901113752103
+06/08/24 20:36:13, Total factoring time = 10.7425 seconds
+06/08/24 20:36:14, 
+06/08/24 20:36:14, ****************************
+06/08/24 20:36:14, Starting factorization of 220334680454952969125916412602122090604337968124051375777324709205153630776261961906408167634143320670873286516242564284713969138675925933305983152804070763572828026360487764672943909024438624253962931646032499644355003524011478481793663691358146864523675974007821666162933950743230291873029932216053933110687
+06/08/24 20:36:14, using pretesting plan: normal
+06/08/24 20:36:14, no tune info: using qs/gnfs crossover of 95 digits
+06/08/24 20:36:14, no tune info: using qs/snfs crossover of 75 digits
+06/08/24 20:36:14, ****************************
+06/08/24 20:36:14, div: found prime factor = 67
+06/08/24 20:36:14, rho: x^2 + 3, starting 1000 iterations on C307
+06/08/24 20:36:15, rho: x^2 + 2, starting 1000 iterations on C307
+06/08/24 20:36:15, rho: x^2 + 1, starting 1000 iterations on C307
+06/08/24 20:36:15, pm1: starting B1 = 150K, B2 = gmp-ecm default on C307
+06/08/24 20:36:16, prp13 = 2106394188443
+06/08/24 20:36:16, current ECM pretesting depth: 0.000000
+06/08/24 20:36:16, scheduled 30 curves at B1=2000 toward target pretesting depth of 90.769231
+06/08/24 20:36:17, prp295 = 1561235469726595794510192733675595089645365924831500465163794211675776015762883947944082812245540374346110322896671983652344313487932610633555776607915152588737217683433099453787078092068675729644667806051432890700663466962673637498793187760534724038374337973153155404942878076945424339519873327
+06/08/24 20:36:17, Total factoring time = 3.0659 seconds
