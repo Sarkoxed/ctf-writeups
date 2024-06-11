@@ -323,7 +323,8 @@ int main(int argc, char **argv) {
 
 ## Final steps
 
-For each value it took me around a hour to compute the root. So I had to rent the machine in a compute cloud.
+For each value it took me around a hour to compute the root. And also my memory went off the limit. And my laptop crashed. It was frustrating. 
+So I had to rent the machine in a compute cloud.
 
 The first attemt to launch 24 processes failed. So I decided to binary search.
 First one was 12:
