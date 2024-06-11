@@ -97,7 +97,7 @@ But $x^{p-1}$ is huge. $\approx x^{2^{64}}$. So we need to be smart.
 
 First optimization is to raise $x$ to the power $p-1$ modulo $H(x) - h_i$. That will keep the powers somewhat reasonable. 
 
-After computing $x^{p-1} \pmod{H(x) - h_i$ we can take the ordinary gcd and recover the kind of small polynomial. Well, it should be small.  
+After computing $x^{p-1} \pmod{H(x) - h_i}$ we can take the ordinary gcd and recover the kind of small polynomial. Well, it should be small.  
 
 If we try to do that in sage with something like this:
 
