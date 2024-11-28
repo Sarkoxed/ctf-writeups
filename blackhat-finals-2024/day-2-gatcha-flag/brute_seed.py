@@ -9,6 +9,7 @@ from datetime import datetime
 
 bitstream = '10010111100001011011001010111001011011010101010011010111010011010111010101011000011010010111000001011000000100100110111111010101010101100011110101010100010100110111100010011000000000011111001101000010101110110001101001011010010101101100010111000110001101100001011111111101001101110101010111000010011010000100011110000001010100100001100110101000100111010100001110001010100110011100100110111011001010011010010110001000001000111010011100001011110000000001101111001101011110100010111101111101100101010101110100010000111111100001110001101111010110011001010100011010110000110011011111111001011111000001010011100101010100001101010110100100101100000111001001101110000000000110010111100010011000010010010000011110011010101111011110111000001001011000110000101001001001110000100111001001101000011110011011101100'
 
+# Sinulate server Random
 class ServerBitstream:
     def __init__(self):
         self.bitstream = bitstream
@@ -30,6 +31,7 @@ class ServerBitstream:
         if self.counts[self.state] == self.target_counts[self.state]:
             self.state += 1
 
+# Sinulate user Random
 class UserBitstream:
     def __init__(self, seed):
         self.rand = Random(seed)
@@ -48,7 +50,8 @@ class UserBitstream:
         if self.counts[self.state] == self.target_counts[self.state]:
             self.state += 1
 
-
+# just locally brute the seed such that the resulting pull will contain mythical rarity
+# Took around 15 mins on my laptop
 def brute_seed(range_):
     passed = 0
     c = Cache("blackhat", "gatcha")
@@ -92,39 +95,39 @@ def brute_seed(range_):
             print(seed)
             exit(0)
 
-#np = 10
-#ranges = [range(2**32 // np) for _ in range(np)]
+np = 10
+ranges = [range(2**32 // np) for _ in range(np)]
+
+with mp.Pool(np) as p:
+    p.map(brute_seed, ranges)
+
+## final checks
+#seed = 921205744651925343
 #
-#with mp.Pool(np) as p:
-#    p.map(brute_seed, ranges)
-
-# final checks
-seed = 921205744651925343
-
-from challenge import HASH, FLAG
-R_ = Random(int(HASH(FLAG).digest().hex(), 16))
-assert R_.GetRandBits(len(bitstream)) == int(bitstream, 2)
-
-
-R_ = Random(int(HASH(FLAG).digest().hex(), 16))
-SR = ServerBitstream()
-R = UserBitstream(seed)
-
-while SR.state < 4:
-    v, bs2, bo2 = SR.next()
-    v1 = R_.GetRandBits(bs2.bit_length() - 1)
-    #print(v, v1, w, SR.bounds[SR.state])
-    if v is None:
-        found = False
-        #print(f"overflow over {len(bitstream)} bits on server...")
-        break
-    
-    u, bs1, bo1 = R.next()
-    assert bs1 == bs2
-    assert bo1 == bo2
-    w = (u + v) % bs1
-    print(v, v1, w, SR.bounds[SR.state], bs2, bo2, u)
-    assert v == v1
-    if w < bo1:
-        R.passed()
-        SR.passed()
+#from challenge import HASH, FLAG
+#R_ = Random(int(HASH(FLAG).digest().hex(), 16))
+#assert R_.GetRandBits(len(bitstream)) == int(bitstream, 2)
+#
+#
+#R_ = Random(int(HASH(FLAG).digest().hex(), 16))
+#SR = ServerBitstream()
+#R = UserBitstream(seed)
+#
+#while SR.state < 4:
+#    v, bs2, bo2 = SR.next()
+#    v1 = R_.GetRandBits(bs2.bit_length() - 1)
+#    #print(v, v1, w, SR.bounds[SR.state])
+#    if v is None:
+#        found = False
+#        #print(f"overflow over {len(bitstream)} bits on server...")
+#        break
+#    
+#    u, bs1, bo1 = R.next()
+#    assert bs1 == bs2
+#    assert bo1 == bo2
+#    w = (u + v) % bs1
+#    print(v, v1, w, SR.bounds[SR.state], bs2, bo2, u)
+#    assert v == v1
+#    if w < bo1:
+#        R.passed()
+#        SR.passed()
