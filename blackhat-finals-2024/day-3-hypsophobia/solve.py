@@ -25,7 +25,6 @@ def go(r):
     x = int.from_bytes(urlsafe_b64decode(re.findall(r'BLEUUUURGHHH(.*)\n', response)[0] + "====="), 'big')
     return floor, x
 
-# can be less queries if we also consider the odd case
 def get_double(r, scalars, xs):
     c = 0
     while True:
